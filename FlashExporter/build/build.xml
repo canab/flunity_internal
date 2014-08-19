@@ -1,0 +1,92 @@
+<project name="build" basedir="." default="build-new-version">
+	<property file="local.properties"/>
+
+	<condition property="exe" value=".exe" else="">
+		<os family="windows"/>
+	</condition>
+
+	<condition property="open.cmd" value="start" else="open">
+		<os family="windows"/>
+	</condition>
+
+	<property name="adl" value="${flex.sdk.dir}/bin/adl${exe}"/>
+	<property name="adt" value="${flex.sdk.dir}/bin/adt${exe}"/>
+	<property name="amxmlc" value="${flex.sdk.dir}/bin/amxmlc${exe}"/>
+	<property name="build.debug" value="true"/>
+	<property name="dist.dir" value="../../Distrib"/>
+
+	<target name="build-new-version" depends="build-number, build, pack-air, show"/>
+
+	<target name="show">
+		<property name="absolute.path" location="${dist.dir}"/>
+		<exec spawn="true" executable="${open.cmd}">
+			<arg line="${absolute.path}"/>
+		</exec>
+	</target>
+
+	<target name="run">
+		<exec executable="${adl}" spawn="true">
+			<arg line="../bin/air-descriptor.xml"/>
+			<arg line="../bin"/>
+		</exec>
+	</target>
+	
+	<target name="run-debug">
+		<exec executable="${adl}" failonerror="true">
+			<arg line="../src/air-descriptor.xml"/>
+			<arg line="../bin"/>
+		</exec>
+	</target>
+
+	<target name="clean">
+		<delete dir="../bin"/>
+		<mkdir dir="../bin"/>
+	</target>
+
+	<target name="build" depends="clean, copy">
+		<exec executable="${amxmlc}" failonerror="true">
+			<arg line="../src/flashexporter/Main.mxml"/>
+			<arg line="-source-path+=../src"/>
+			<arg line="-source-path+=../lib"/>
+			<arg line="-library-path+=../lib"/>
+			<arg line="-output=../bin/FlashExporter.swf"/>
+			<arg line="-debug=${build.debug}"/>
+		</exec>
+	</target>
+
+	<target name="copy" depends="get-version">
+		<copy file="../src/air-descriptor.xml" todir="../bin" overwrite="true"/>
+		<replace file="../bin/air-descriptor.xml"
+		         token="0.0.0"
+		         value="${version}"/>
+	</target>
+
+	<target name="build-number">
+		<propertyfile file="version.properties">
+		  <entry  key="v.build" type="int" default="0" operation="+"/>
+		</propertyfile>
+	</target>
+
+	<target name="get-version">
+		<property file="version.properties"/>
+		<property name="version" value="${v.major}.${v.minor}.${v.build}"/>
+		<echo message="version: ${version}"/>
+	</target>
+
+	<target name="pack-air" depends="get-version">
+		<property name="air.name" value="FlashExporter-${version}.air"/>
+		<exec executable="${adt}" spawn="false" dir="../bin" failonerror="true" >
+			<arg line="-package"/>
+			<arg line="-storetype pkcs12"/>
+			<arg line="-keystore ../build/cert.pfx"/>
+			<arg line="-storepass 123"/>
+			<arg line="-target air"/>
+			<arg line="${air.name}"/>
+			<arg line="air-descriptor.xml"/>
+			<arg line="FlashExporter.swf"/>
+		</exec>
+		<delete dir="${dist.dir}" includes="FlashExporter-*.air"/>
+		<move file="../bin/${air.name}" todir="${dist.dir}"/>
+	</target>
+	
+</project>
