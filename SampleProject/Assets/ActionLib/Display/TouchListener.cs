@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ActionLib.Unity;
 using UnityEngine;
 using System.Collections.Generic;
@@ -18,11 +18,14 @@ namespace ActionLib.Display
 		/// </summary>
 		public Rect? hitArea;
 
+		internal bool isRemoved;
+
 		private readonly DisplayObject _target;
 
 		private readonly List<TouchState> _touches = new List<TouchState>();
 
 		private FlashStage _stage;
+		private bool _debugDrawEnabled;
 
 		#region events
 
@@ -39,6 +42,12 @@ namespace ActionLib.Display
 		public event Action<TouchListener, TouchState> TouchEnded;
 
 		/// <summary>
+		/// Dispatches when touch is canceled.
+		/// Will be dispatched several times in case of multitouch.
+		/// </summary>
+		public event Action<TouchListener, TouchState> TouchCanceled;
+
+		/// <summary>
 		/// Dispatches when object is touched first time.
 		/// Will be dispatched once in case of multitouch.
 		/// </summary>
@@ -49,6 +58,12 @@ namespace ActionLib.Display
 		/// Will be dispatched once in case of multitouch.
 		/// </summary>
 		public event Action<TouchListener> Released;
+
+		/// <summary>
+		/// Dispatches when all touches are canceled.
+		/// Will be dispatched once in case of multitouch.
+		/// </summary>
+		public event Action<TouchListener> Canceled;
 
 		#endregion
 
@@ -66,6 +81,12 @@ namespace ActionLib.Display
 			return this;
 		}
 
+		public TouchListener OnTouchCanceled(Action<TouchListener, TouchState> handler)
+		{
+			TouchCanceled += handler;
+			return this;
+		}
+
 		public TouchListener OnPressed(Action<TouchListener> handler)
 		{
 			Pressed += handler;
@@ -75,6 +96,12 @@ namespace ActionLib.Display
 		public TouchListener OnReleased(Action<TouchListener> handler)
 		{
 			Released += handler;
+			return this;
+		}
+
+		public TouchListener OnCanceled(Action<TouchListener> handler)
+		{
+			Canceled += handler;
 			return this;
 		}
 
@@ -106,79 +133,101 @@ namespace ActionLib.Display
 		public TouchListener(DisplayObject target)
 		{
 			_target = target;
-			_target.AddedToStage += OnTargetAdded;
-			_target.RemovedFromStage += OnTargetRemoved;
+			_target.AddedToStage += OnTargetAddedToStage;
+			_target.RemovedFromStage += OnTargetRemovedFromStage;
 
 			if (_target.isOnStage)
-				OnTargetAdded(target);
+				OnTargetAddedToStage(target);
 		}
 
-		void OnTargetAdded(DisplayObject obj)
+		void OnTargetAddedToStage(DisplayObject obj)
 		{
+			ClearState();
+
 			_stage = target.stage;
-			_stage.input.TouchBegan += OnTouchBegan;
-			_stage.input.TouchEnded += OnTouchEnded;
+			_stage.touchController.AddListener(this);
 
-			if (Debug.isDebugBuild)
+			_debugDrawEnabled = Debug.isDebugBuild;
+			if (_debugDrawEnabled)
 				_stage.drawEvent.AddListener(DrawDebugRect);
+
 		}
 
-		void OnTargetRemoved(DisplayObject obj)
+		void OnTargetRemovedFromStage(DisplayObject obj)
 		{
-			_stage.input.TouchBegan -= OnTouchBegan;
-			_stage.input.TouchEnded -= OnTouchEnded;
+			ClearState();
 
-			if (Debug.isDebugBuild)
+			if (_debugDrawEnabled)
 				_stage.drawEvent.RemoveListener(DrawDebugRect);
 
+			_stage.touchController.RemoveListener(this);
 			_stage = null;
 		}
 
-		void DrawDebugRect()
+		internal bool HandleTouchBegin(TouchState touch)
 		{
-			if (DebugDraw.drawHitAreas && IsTouchEnabled())
-			{
-				var rect = hitArea.HasValue
-					? hitArea.Value
-					: target.GetInternalBounds();
+			if (isRemoved || !IsTouchEnabled())
+				return false;
 
-				DebugDraw.DrawRect(target, rect, DebugDraw.drawHitAreasColor);
-			}
-		}
-
-		void OnTouchBegan(TouchState touch)
-		{
-			if (!IsTouchEnabled())
-				return;
+			if (HasTouch(touch.id))
+				return false;
 
 			if (!HitTestPoint(touch.position))
-				return;
-
-			var touchIndex = GetTouchIndex(touch.id);
-			if (touchIndex >= 0)
-				return;
+				return false;
 
 			_touches.Add(touch);
 			TouchBegan.Dispatch(this, touch);
 			isPressed = _touches.Count > 0;
+
+			return true;
 		}
 
-		void OnTouchEnded(TouchState touch)
+		internal void HandleTouchEnd(TouchState touch)
 		{
-			if (!IsTouchEnabled())
-			{
-				_isPressed = false;
-				_touches.Clear();
-				return;
-			}
-
-			var touchIndex = GetTouchIndex(touch.id);
-			if (touchIndex < 0)
+			if (isRemoved || !IsTouchEnabled())
 				return;
 
-			_touches.RemoveAt(touchIndex);
+			if (!HasTouch(touch.id))
+				return;
+
+			_touches.RemoveAt(GetTouchIndex(touch.id));
 			TouchEnded.Dispatch(this, touch);
 			isPressed = _touches.Count > 0;
+		}
+
+		internal void HandleTouchCancel(TouchState touch)
+		{
+			if (isRemoved || !IsTouchEnabled())
+				return;
+
+			if (!HasTouch(touch.id))
+				return;
+
+			if (HitTestPoint(touch.position))
+				return;
+
+			_touches.RemoveAt(GetTouchIndex(touch.id));
+			_isPressed = _touches.Count > 0;
+
+			TouchCanceled.Dispatch(this, touch);
+			if (_touches.Count == 0)
+				Canceled.Dispatch(this);
+		}
+
+		internal void refreshTouchState()
+		{
+			if (!IsTouchEnabled())
+				ClearState();
+		}
+
+		private bool HasTouch(int touchId)
+		{
+			for (int i = 0; i < _touches.Count; i++)
+			{
+				if (_touches[i].id == touchId)
+					return true;
+			}
+			return false;
 		}
 
 		private int GetTouchIndex(int touchId)
@@ -205,7 +254,7 @@ namespace ActionLib.Display
 			return localBounds.Contains(localPoint);
 		}
 
-		bool IsTouchEnabled()
+		private bool IsTouchEnabled()
 		{
 			for (var t = target; t != null; t = t.parent)
 			{
@@ -213,6 +262,24 @@ namespace ActionLib.Display
 					return false;
 			}
 			return true;
+		}
+
+		private void ClearState()
+		{
+			_isPressed = false;
+			_touches.Clear();
+		}
+
+		private void DrawDebugRect()
+		{
+			if (DebugDraw.drawHitAreas && IsTouchEnabled())
+			{
+				var rect = hitArea.HasValue
+					? hitArea.Value
+					: target.GetInternalBounds();
+
+				DebugDraw.DrawRect(target, rect, DebugDraw.drawHitAreasColor);
+			}
 		}
 
 		/// <summary>

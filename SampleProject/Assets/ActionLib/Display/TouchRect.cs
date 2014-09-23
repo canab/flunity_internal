@@ -81,6 +81,12 @@ namespace ActionLib.Display
 			return _touchListenter;
 		}
 
+		public TouchListener OnTouchCanceled(Action<TouchListener, TouchState> handler)
+		{
+			_touchListenter.TouchCanceled += handler;
+			return _touchListenter;
+		}
+
 		public TouchListener OnPressed(Action<TouchListener> handler)
 		{
 			_touchListenter.Pressed += handler;
@@ -90,6 +96,12 @@ namespace ActionLib.Display
 		public TouchListener OnReleased(Action<TouchListener> handler)
 		{
 			_touchListenter.Released += handler;
+			return _touchListenter;
+		}
+
+		public TouchListener OnCanceled(Action<TouchListener> handler)
+		{
+			_touchListenter.Canceled += handler;
 			return _touchListenter;
 		}
 
