@@ -36,6 +36,7 @@ namespace ActionLib.Unity
 		internal readonly EventSender drawEvent = new EventSender();
 		internal readonly EventSender updateEvent = new EventSender();
 
+		internal TouchController touchController;
 		internal DrawBatch debugBatch;
 		internal DrawBatch sceneBatch;
 		internal bool isDrawPhase;
@@ -119,6 +120,7 @@ namespace ActionLib.Unity
 		{
 			root = new DisplayRoot(this);
 			input = new InputController(this);
+			touchController = new TouchController(this);
 			sceneBatch = new DrawBatch(this, null, 0);
 			debugBatch = new DrawBatch(this, null, 1);
 
@@ -163,6 +165,7 @@ namespace ActionLib.Unity
 			if (Application.isPlaying)
 			{
 				input.DoUpdate();
+				touchController.DoUpdate();
 				updateEvent.Dispatch();
 			}
 		}
