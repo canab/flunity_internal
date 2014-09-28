@@ -7,6 +7,7 @@ using ActionLib.Display;
 
 namespace Scripts
 {
+		/*
 	public class SceneController : MonoBehaviour
 	{
 		#region initializing
@@ -153,6 +154,6 @@ namespace Scripts
 			else
 				Debug.LogError("Sound not found: " + resName);
 		}
-	}
+	}*/
 }
 
