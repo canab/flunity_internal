@@ -27,8 +27,8 @@ The framework consists of two parts:
 
 # Getting Started
 
-The fastest way is to checkout **master** branch of this repository.
-It contains unity project **SampleProject** which is ready to run in unity.
+The fastest way is to checkout **master** branch of this repository.  
+It contains **SampleProject** which is ready to run in unity.
 
 To generate resources from flash you should compile [ResourceTool](https://github.com/nravo/flunity/wiki/ResourceTool)
 
