@@ -26,9 +26,13 @@ The framework consists of two parts:
 - Tween library for programmatic animation
 
 # Getting Started
-- [Read on Wiki](https://github.com/nravo/flunity/wiki)
 
+The fastest way is to checkout **master** branch of this repository.
+It contains unity project **SampleProject** which is ready to run in unity.
 
+To generate resources from flash you should compile [ResourceTool](https://github.com/nravo/flunity/wiki/ResourceTool)
 
+# Next steps
 
-
+[Setup new project from scratch](https://github.com/nravo/flunity/wiki/GettingStarted/)
+[API documentation](http://nravo.github.io/flunity/api-docs/)
