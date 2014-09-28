@@ -1,0 +1,6 @@
+<map id="ActionLib.Resources.IDisplayResource" name="ActionLib.Resources.IDisplayResource">
+<area shape="rect" id="node3" href="$class_action_lib_1_1_resources_1_1_movie_clip_resource.html" title="Holds data exported from flash as MovieClip. " alt="" coords="5,171,189,213"/>
+<area shape="rect" id="node4" href="$class_action_lib_1_1_resources_1_1_sprite_resource.html" title="Holds data exported from flash as BitmapSprite. " alt="" coords="214,171,396,213"/>
+<area shape="rect" id="node2" href="$interface_action_lib_1_1_resources_1_1_i_resource.html" title="Base interface for all resources " alt="" coords="160,5,243,32"/>
+<area shape="rect" id="node5" href="$class_action_lib_1_1_resources_1_1_font_resource.html" title="Represent font symbols data exported from flash. " alt="" coords="218,262,392,303"/>
+</map>
