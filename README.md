@@ -34,5 +34,5 @@ To generate resources from flash you should compile [ResourceTool](https://githu
 
 # Next steps
 
-[Setup new project from scratch](https://github.com/nravo/flunity/wiki/GettingStarted/)
-[API documentation](http://nravo.github.io/flunity/api-docs/)
+- [Setup new project from scratch](https://github.com/nravo/flunity/wiki/GettingStarted/)
+- [API documentation](http://nravo.github.io/flunity/api-docs/)
