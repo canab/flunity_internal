@@ -1,5 +1,8 @@
-<project name="build" basedir="." default="build-new-version">
-	<property file="local.properties"/>
+<project name="build" basedir="." default="build-and-pack">
+
+	<property environment="env"/>
+	
+	<fail message="set environment variable FLEX_HOME=/path/to/flex_sdk_4.6" unless="env.FLEX_HOME"></fail>
 
 	<condition property="exe" value=".exe" else="">
 		<os family="windows"/>
@@ -9,13 +12,16 @@
 		<os family="windows"/>
 	</condition>
 
-	<property name="adl" value="${flex.sdk.dir}/bin/adl${exe}"/>
-	<property name="adt" value="${flex.sdk.dir}/bin/adt${exe}"/>
-	<property name="amxmlc" value="${flex.sdk.dir}/bin/amxmlc${exe}"/>
+	<property name="flex.sdk" value="${env.FLEX_HOME}"/>
+	<property name="adl" value="${flex.sdk}/bin/adl${exe}"/>
+	<property name="adt" value="${flex.sdk}/bin/adt${exe}"/>
+	<property name="amxmlc" value="${flex.sdk}/bin/amxmlc${exe}"/>
 	<property name="build.debug" value="true"/>
 	<property name="dist.dir" value="../../Distrib"/>
+	<property name="cert.file" location="debug-cert.pfx"/>
+	<property name="cert.pasword" value="123"/>
 
-	<target name="build-new-version" depends="build-number, build, pack-air, show"/>
+	<target name="build-and-pack" depends="build, pack-air, show"/>
 
 	<target name="show">
 		<property name="absolute.path" location="${dist.dir}"/>
@@ -61,12 +67,6 @@
 		         value="${version}"/>
 	</target>
 
-	<target name="build-number">
-		<propertyfile file="version.properties">
-		  <entry  key="v.build" type="int" default="0" operation="+"/>
-		</propertyfile>
-	</target>
-
 	<target name="get-version">
 		<property file="version.properties"/>
 		<property name="version" value="${v.major}.${v.minor}.${v.build}"/>
@@ -78,8 +78,8 @@
 		<exec executable="${adt}" spawn="false" dir="../bin" failonerror="true" >
 			<arg line="-package"/>
 			<arg line="-storetype pkcs12"/>
-			<arg line="-keystore ../build/cert.pfx"/>
-			<arg line="-storepass 123"/>
+			<arg line="-keystore ${cert.file}"/>
+			<arg line="-storepass ${cert.pasword}"/>
 			<arg line="-target air"/>
 			<arg line="${air.name}"/>
 			<arg line="air-descriptor.xml"/>
