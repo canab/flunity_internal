@@ -21,6 +21,7 @@ The framework consists of two parts:
 
 # Runtime Features
 - Clean and robust API for manipulating of composition of visual oblects
+- Flash objects are rendered in a **FlashStage** component using one draw call. Whoole flash scene is rendered as one mesh.
 - Touch events for single object
 - Tween library for programmatic animation
 
