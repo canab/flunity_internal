@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-using Flunity.Unity;
 using FlashBundles;
 using System.Collections.Generic;
-using Flunity.Motion;
-using Flunity.Display;
+using Flunity;
 
 namespace Scripts
 {

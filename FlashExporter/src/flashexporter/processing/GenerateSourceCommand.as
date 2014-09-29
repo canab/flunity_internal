@@ -33,8 +33,7 @@ package flashexporter.processing
 
 		override protected function onExecute():void
 		{
-			addUsing("ActionLib.Display");
-			addUsing("ActionLib.Resources");
+			addUsing("Flunity");
 
 			var resources:Array = from(_swf.symbols)
 					.where(function(it:Symbol):Boolean {
