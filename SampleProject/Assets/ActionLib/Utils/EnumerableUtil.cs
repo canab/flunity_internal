@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 using System.Text;
 
-namespace ActionLib.Utils
+namespace Flunity.Utils
 {
 	/// <summary>
 	/// Helper methods

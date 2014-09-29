@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
-using ActionLib.Utils;
-using ActionLib.Unity;
+using Flunity.Utils;
+using Flunity.Unity;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Forms vertex data for rendering scene

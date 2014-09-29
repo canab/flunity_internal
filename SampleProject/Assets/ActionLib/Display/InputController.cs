@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using ActionLib.Common;
+using Flunity.Common;
 using UnityEngine;
-using ActionLib.Unity;
+using Flunity.Unity;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Provides unified interface to handle global events both from touch device and mouse.

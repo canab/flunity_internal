@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Xml.Linq;
-using ActionLib.Display;
+using Flunity.Display;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	internal class MovieClipParser
     {

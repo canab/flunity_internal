@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using ActionLib.Resources;
+using Flunity.Resources;
 using UnityEngine;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	internal class FontManager
 	{

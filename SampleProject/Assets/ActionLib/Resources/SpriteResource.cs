@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
 using System.Xml.Linq;
-using ActionLib.Utils;
+using Flunity.Utils;
 using UnityEngine;
-using ActionLib.Display;
+using Flunity.Display;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Holds data exported from flash as BitmapSprite.

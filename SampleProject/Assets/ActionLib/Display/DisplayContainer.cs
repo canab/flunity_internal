@@ -2,10 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ActionLib.Utils;
-using ActionLib.Unity;
+using Flunity.Utils;
+using Flunity.Unity;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Container for DisplayObjects.

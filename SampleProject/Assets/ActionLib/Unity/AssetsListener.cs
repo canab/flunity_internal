@@ -2,7 +2,7 @@
 using System;
 using UnityEditor;
 
-namespace ActionLib.Unity
+namespace Flunity.Unity
 {
 	internal class AssetsListener : AssetPostprocessor
 	{

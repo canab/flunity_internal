@@ -1,7 +1,7 @@
 using System;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Methods to run/stop animation on objects which implements IFrameAnimable interface

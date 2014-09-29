@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Invisible display object wich can handle touches.

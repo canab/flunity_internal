@@ -1,4 +1,4 @@
-﻿namespace ActionLib.Common
+﻿namespace Flunity.Common
 {
 	public enum LogLevel
 	{

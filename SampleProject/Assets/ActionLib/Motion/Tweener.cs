@@ -1,8 +1,8 @@
 using System;
-using ActionLib.Common;
+using Flunity.Common;
 using UnityEngine;
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Animates one or more properties on the target object. See TweenManager, TweenExt

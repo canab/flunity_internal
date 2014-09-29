@@ -4,10 +4,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using ActionLib.Common;
-using ActionLib.Utils;
+using Flunity.Common;
+using Flunity.Utils;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Manages loading/unloading of resource bundles

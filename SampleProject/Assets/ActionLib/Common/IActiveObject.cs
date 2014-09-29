@@ -1,4 +1,4 @@
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// Allows to objects which can be manipulated by somebody specify that

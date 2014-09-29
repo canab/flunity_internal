@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Holds info about single frame in the sprite sheet

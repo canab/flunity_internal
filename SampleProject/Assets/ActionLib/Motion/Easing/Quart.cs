@@ -1,5 +1,5 @@
 
-namespace ActionLib.Motion.Easing
+namespace Flunity.Motion.Easing
 {
 	/// <summary>
 	/// 4-th power equations

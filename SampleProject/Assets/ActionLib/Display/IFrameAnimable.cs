@@ -1,4 +1,4 @@
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// All objects which implements IFrameAnimable can be animated.

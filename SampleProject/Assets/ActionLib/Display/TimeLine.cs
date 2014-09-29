@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	internal struct InstanceInfo
 	{

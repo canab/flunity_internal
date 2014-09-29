@@ -1,5 +1,5 @@
 
-namespace ActionLib.Motion.Easing
+namespace Flunity.Motion.Easing
 {
 	/// <summary>
 	/// Back bouncing equations

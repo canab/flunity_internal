@@ -1,7 +1,7 @@
 using System;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Holds animation data for containing DisplayObject.

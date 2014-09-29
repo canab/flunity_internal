@@ -1,6 +1,6 @@
-﻿using ActionLib.Display;
+﻿using Flunity.Display;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Interface for resources that can instantiate DisplayObject

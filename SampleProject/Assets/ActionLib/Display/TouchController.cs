@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using ActionLib.Unity;
+using Flunity.Unity;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	internal class TouchController
 	{

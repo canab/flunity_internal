@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// Holds several pools for different object types.

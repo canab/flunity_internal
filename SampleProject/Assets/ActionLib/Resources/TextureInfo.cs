@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	internal struct TextureInfo
 	{

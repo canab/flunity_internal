@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using ActionLib.Common;
-using ActionLib.Motion.Properties;
-using ActionLib.Unity;
-using ActionLib.Utils;
+using Flunity.Common;
+using Flunity.Motion.Properties;
+using Flunity.Unity;
+using Flunity.Utils;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Base class for renderable objects

@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Base class for resources

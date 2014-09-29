@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Holds cached quads which will be drawn.

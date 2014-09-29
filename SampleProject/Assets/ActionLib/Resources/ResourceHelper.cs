@@ -2,10 +2,10 @@ using System;
 using System.IO;
 using System.Xml.Linq;
 using UnityEngine;
-using ActionLib.Utils;
-using ActionLib.Display;
+using Flunity.Utils;
+using Flunity.Display;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	internal static class ResourceHelper
 	{

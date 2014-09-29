@@ -1,7 +1,7 @@
 using System;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Motion.Properties
+namespace Flunity.Motion.Properties
 {
 	/// <summary>
 	/// Interpolates int values

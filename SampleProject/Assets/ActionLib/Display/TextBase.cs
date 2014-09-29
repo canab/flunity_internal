@@ -1,9 +1,9 @@
 using System;
-using ActionLib.Utils;
-using ActionLib.Resources;
+using Flunity.Utils;
+using Flunity.Resources;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Base class for text rendering. See TextField, TextLabel

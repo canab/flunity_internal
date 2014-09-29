@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Struct holds position/uv/color data

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionLib.Motion.Properties
+namespace Flunity.Motion.Properties
 {
 	/// <summary>
 	/// Interpolates Color values

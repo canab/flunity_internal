@@ -1,7 +1,7 @@
 //-- This is generated content, don't modify this file!
 
-using ActionLib.Display;
-using ActionLib.Resources;
+using Flunity.Display;
+using Flunity.Resources;
 
 namespace FlashBundles
 {

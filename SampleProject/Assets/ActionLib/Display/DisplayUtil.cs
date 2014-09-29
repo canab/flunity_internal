@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
-using ActionLib.Motion;
-using ActionLib.Utils;
+using Flunity.Motion;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Helper methods for DisplayObjects

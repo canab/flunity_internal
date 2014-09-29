@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Struct holds full color and tint info.

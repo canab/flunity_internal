@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using ActionLib.Common;
+using Flunity.Common;
 
-namespace ActionLib.Unity
+namespace Flunity.Unity
 {
 	internal class UnityEventDispatcher : MonoBehaviour
 	{

@@ -4,10 +4,10 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Reflection;
-using ActionLib.Utils;
-using ActionLib.Resources;
+using Flunity.Utils;
+using Flunity.Resources;
 
-namespace ActionLib.Unity
+namespace Flunity.Unity
 {
 	[CustomEditor(typeof(FlashStage))]
 	public class FlashStageEditor : Editor

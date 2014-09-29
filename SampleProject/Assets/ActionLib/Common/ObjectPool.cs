@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// Base class for generic pools.

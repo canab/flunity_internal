@@ -1,5 +1,5 @@
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Interfacece for tween properties.

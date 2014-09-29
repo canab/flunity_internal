@@ -1,4 +1,4 @@
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Struct holds info about label placed on the frame.

@@ -5,7 +5,7 @@ using System.Text;
 using System.Reflection;
 using System.Linq;
 
-namespace ActionLib.Utils
+namespace Flunity.Utils
 {
 	/// <summary>
 	/// .NET methods which are not implemented in .NET 20

@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Extension methods for creating tween animations on objects.

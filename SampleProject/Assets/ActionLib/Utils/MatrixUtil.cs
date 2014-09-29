@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace ActionLib.Utils
+namespace Flunity.Utils
 {
 	/// <summary>
 	/// Helper methods

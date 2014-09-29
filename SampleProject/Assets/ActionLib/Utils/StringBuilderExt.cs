@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Text;
 
-namespace ActionLib.Utils
+namespace Flunity.Utils
 {
 	/// <summary>
 	/// Provides memory-allocation-free methods for StringBuilder

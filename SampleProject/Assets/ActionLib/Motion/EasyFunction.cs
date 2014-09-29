@@ -1,4 +1,4 @@
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Represents interpolating equation

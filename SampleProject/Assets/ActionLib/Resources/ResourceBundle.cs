@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using ActionLib.Common;
-using ActionLib.Utils;
+using Flunity.Common;
+using Flunity.Utils;
 using UnityEngine;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Contains set of resources which are loaded/unloaded simultaneously.

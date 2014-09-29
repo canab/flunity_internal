@@ -4,10 +4,10 @@ using System.Reflection;
 using System.Xml.Linq;
 using UnityEngine;
 using System.IO;
-using ActionLib.Common;
-using ActionLib.Utils;
+using Flunity.Common;
+using Flunity.Utils;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Bundle that contains resources as static declarations.

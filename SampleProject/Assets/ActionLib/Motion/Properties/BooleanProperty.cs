@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionLib.Motion.Properties
+namespace Flunity.Motion.Properties
 {
 	/// <summary>
 	/// Interpolates boolean values

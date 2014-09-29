@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// Holds actions for invoking them later by calling InvokeActions().

@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Holds data of 4 vertices of the sprite

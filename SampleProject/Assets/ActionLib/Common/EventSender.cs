@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using ActionLib.Common;
+using Flunity.Common;
 
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// EventSender for actions without arguments.

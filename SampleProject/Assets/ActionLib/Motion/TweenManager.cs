@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using ActionLib.Common;
-using ActionLib.Motion.Easing;
-using ActionLib.Unity;
+using Flunity.Common;
+using Flunity.Motion.Easing;
+using Flunity.Unity;
 using UnityEngine;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Controller, calls update methon on all active tweens.

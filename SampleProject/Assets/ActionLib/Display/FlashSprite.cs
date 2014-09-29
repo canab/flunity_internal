@@ -1,9 +1,9 @@
 using System;
-using ActionLib.Resources;
+using Flunity.Resources;
 using UnityEngine;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Bitmap sprite. Has one or more bitmap frames.

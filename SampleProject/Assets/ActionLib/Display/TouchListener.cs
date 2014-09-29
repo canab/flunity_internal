@@ -1,10 +1,10 @@
 using System;
-using ActionLib.Unity;
+using Flunity.Unity;
 using UnityEngine;
 using System.Collections.Generic;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Provides events to handle touches on target DisplayObject.

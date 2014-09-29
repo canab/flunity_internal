@@ -1,4 +1,4 @@
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// <b>Does not implemented!</b>

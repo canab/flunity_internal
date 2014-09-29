@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using ActionLib.Common;
-using ActionLib.Display;
-using ActionLib.Resources;
+using Flunity.Common;
+using Flunity.Display;
+using Flunity.Resources;
 
-namespace ActionLib.Unity
+namespace Flunity.Unity
 {
 	[ExecuteInEditMode]
 	public class FlashDebugOptions : MonoBehaviour

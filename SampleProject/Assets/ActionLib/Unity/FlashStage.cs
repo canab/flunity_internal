@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using ActionLib.Utils;
-using ActionLib.Resources;
-using ActionLib.Common;
+using Flunity.Utils;
+using Flunity.Resources;
+using Flunity.Common;
 using System;
-using ActionLib.Display;
+using Flunity.Display;
 
-namespace ActionLib.Unity
+namespace Flunity.Unity
 {
 	/// <summary>
 	/// Unity component in which flash scene is beind rendered.

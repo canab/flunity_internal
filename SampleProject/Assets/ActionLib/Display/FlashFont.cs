@@ -1,7 +1,7 @@
-using ActionLib.Resources;
+using Flunity.Resources;
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Font info like color/scale

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ActionLib.Utils
+namespace Flunity.Utils
 {
 	/// <summary>
 	/// Helper methods

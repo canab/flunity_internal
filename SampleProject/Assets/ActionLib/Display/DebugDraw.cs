@@ -1,7 +1,7 @@
 using UnityEngine;
-using ActionLib.Utils;
+using Flunity.Utils;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Flags to draw some gizmos like touch areas.

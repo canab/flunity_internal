@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Horisontal alignment constants

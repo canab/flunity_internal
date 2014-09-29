@@ -1,7 +1,7 @@
 ﻿using System;
-using ActionLib.Display;
+using Flunity.Display;
 
-namespace ActionLib.Motion.Properties
+namespace Flunity.Motion.Properties
 {
 	/// <summary>
 	/// Interpolates ColorTransform values

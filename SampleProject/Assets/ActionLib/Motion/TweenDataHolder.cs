@@ -1,7 +1,7 @@
 
-using ActionLib.Common;
+using Flunity.Common;
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	/// <summary>
 	/// Holds start/end values of tweened object.

@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionLib.Motion.Easing
+namespace Flunity.Motion.Easing
 {
 	/// <summary>
 	/// Exponential equations

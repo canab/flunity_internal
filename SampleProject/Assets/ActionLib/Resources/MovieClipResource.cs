@@ -1,9 +1,9 @@
 using System;
 using System.Xml.Linq;
-using ActionLib.Utils;
-using ActionLib.Display;
+using Flunity.Utils;
+using Flunity.Display;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	/// <summary>
 	/// Holds data exported from flash as MovieClip.

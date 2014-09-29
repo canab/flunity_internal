@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ActionLib.Motion
+namespace Flunity.Motion
 {
 	internal class TweenPropertyMap : Dictionary<ITweenProperty, TweenDataHolder>
 	{

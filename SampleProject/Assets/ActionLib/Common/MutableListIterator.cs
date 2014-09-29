@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace ActionLib.Common
+namespace Flunity.Common
 {
 	/// <summary>
 	/// Allows change List<T> during an iteration phase.

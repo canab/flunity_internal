@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace ActionLib.Resources
+namespace Flunity.Resources
 {
 	internal class CharInfo
 	{

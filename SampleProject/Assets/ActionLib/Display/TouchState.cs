@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ActionLib.Display
+namespace Flunity.Display
 {
 	/// <summary>
 	/// Struct holds data about touch.
