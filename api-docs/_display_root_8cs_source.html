@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Display/DisplayRoot.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Internal/DisplayRoot.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_507e155172d33e57625b7b3fffb69da7.html">Display</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_817ebf2db588a7e02037448813fc6ecb.html">Internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,19 +87,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DisplayRoot.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_display_root_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> ActionLib.Unity;</div>
+<a href="_display_root_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> Flunity;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>ActionLib.Display</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>Flunity.Internal</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">internal</span> <span class="keyword">class </span>DisplayRoot : DisplayContainer</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">internal</span> <span class="keyword">class </span>DisplayRoot : <a class="code" href="class_flunity_1_1_display_container.html">DisplayContainer</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">private</span> readonly DisplayTreeRenderer _stageRenderer;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span> DisplayRoot(<a class="code" href="class_action_lib_1_1_unity_1_1_flash_stage.html">FlashStage</a> component)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span> DisplayRoot(<a class="code" href="class_flunity_1_1_flash_stage.html">FlashStage</a> component)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            stage = component;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            name = <span class="stringliteral">&quot;root&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            drawOptions = DrawOptions.DEFAULT;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            drawOptions = <a class="code" href="class_flunity_1_1_draw_options.html#a3d94097a155e420994d033ba85dffa3f">DrawOptions.DEFAULT</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            _stageRenderer = <span class="keyword">new</span> DisplayTreeRenderer(stage);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
@@ -110,11 +110,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="class_action_lib_1_1_unity_1_1_flash_stage_html"><div class="ttname"><a href="class_action_lib_1_1_unity_1_1_flash_stage.html">ActionLib.Unity.FlashStage</a></div><div class="ttdoc">Unity component in which flash scene is beind rendered. </div><div class="ttdef"><b>Definition:</b> <a href="_flash_stage_8cs_source.html#l00014">FlashStage.cs:14</a></div></div>
+<div class="ttc" id="class_flunity_1_1_display_container_html"><div class="ttname"><a href="class_flunity_1_1_display_container.html">Flunity.DisplayContainer</a></div><div class="ttdoc">Container for DisplayObjects. All children inherit matrix and color transformation from parent contai...</div><div class="ttdef"><b>Definition:</b> <a href="_display_container_8cs_source.html#l00013">DisplayContainer.cs:13</a></div></div>
+<div class="ttc" id="class_flunity_1_1_draw_options_html_a3d94097a155e420994d033ba85dffa3f"><div class="ttname"><a href="class_flunity_1_1_draw_options.html#a3d94097a155e420994d033ba85dffa3f">Flunity.DrawOptions.DEFAULT</a></div><div class="ttdeci">static readonly DrawOptions DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="_draw_options_8cs_source.html#l00009">DrawOptions.cs:9</a></div></div>
+<div class="ttc" id="class_flunity_1_1_flash_stage_html"><div class="ttname"><a href="class_flunity_1_1_flash_stage.html">Flunity.FlashStage</a></div><div class="ttdoc">Unity component in which flash scene is beind rendered. </div><div class="ttdef"><b>Definition:</b> <a href="_flash_stage_8cs_source.html#l00013">FlashStage.cs:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:08 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:38 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

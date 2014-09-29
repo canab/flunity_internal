@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Utils/MatrixUtil.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Utils/MatrixUtil.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_66a4265f9abb7bff79ee234ad80021ff.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_ac71cf1efa7f06cf5692504644931ace.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,25 +90,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="_matrix_util_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>ActionLib.Utils</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>Flunity.Utils</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html">MatrixUtil</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html">MatrixUtil</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#af054af35ebf4aac445223b11bb77620c">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#af054af35ebf4aac445223b11bb77620c">CreateScale2D</a>(<span class="keywordtype">float</span> scale)</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a67db9b01ea91a1b1ebd4671ad094fb5c">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a67db9b01ea91a1b1ebd4671ad094fb5c">CreateScale2D</a>(<span class="keywordtype">float</span> scale)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            Matrix4x4 result;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            CreateScale(scale, scale, scale, out result);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a572fa9c59e97e1a47d6179d4d88d7c60">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a572fa9c59e97e1a47d6179d4d88d7c60">CreateScale2D</a>(<span class="keywordtype">float</span> scaleX, <span class="keywordtype">float</span> scaleY)</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a24ef6b45278e509cb4b2001d54ad9f28">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a24ef6b45278e509cb4b2001d54ad9f28">CreateScale2D</a>(<span class="keywordtype">float</span> scaleX, <span class="keywordtype">float</span> scaleY)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Matrix4x4 result;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            CreateScale(scaleX, scaleY, 1, out result);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a24447e7e5f62e89ed55cc8c289b12821">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a24447e7e5f62e89ed55cc8c289b12821">CreateScale</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z, out Matrix4x4 result)</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a13d5c6aba9e7aa6bee0b90c082c5da2c">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a13d5c6aba9e7aa6bee0b90c082c5da2c">CreateScale</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z, out Matrix4x4 result)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            result.m00 = x;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            result.m01 = 0;</div>
@@ -128,14 +128,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            result.m33 = 1;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a031c098a860505fbfd1bc8b34497f52e">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a031c098a860505fbfd1bc8b34497f52e">Create2D</a>(Vector2 scale, <span class="keywordtype">float</span> rotation, Vector2 translation)</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a87a33d0d4f27255d9efdfd075f6cc32a">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> Matrix4x4 <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a87a33d0d4f27255d9efdfd075f6cc32a">Create2D</a>(Vector2 scale, <span class="keywordtype">float</span> rotation, Vector2 translation)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Matrix4x4 result;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Create2D(ref scale, rotation, ref translation, out result);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#ac5851843ee15f598b655103518037c22">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#ac5851843ee15f598b655103518037c22">Create2D</a>(ref Vector2 scale, <span class="keywordtype">float</span> rotation, ref Vector2 translation,</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#ae97a5658776acfa4ea4f27a88ed7dc00">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#ae97a5658776acfa4ea4f27a88ed7dc00">Create2D</a>(ref Vector2 scale, <span class="keywordtype">float</span> rotation, ref Vector2 translation,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                    out Matrix4x4 result)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">// Analysis disable CompareOfFloatsByEqualityOperator</span></div>
@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            result.m33 = 1;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a050cd4e024d69ceb42c65d82202737ee">   94</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a050cd4e024d69ceb42c65d82202737ee">Multiply</a>(ref Matrix4x4 a, ref Matrix4x4 b, out Matrix4x4 result)</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#ad727e4c4b8a9515ada680aa28b89f2c4">   94</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#ad727e4c4b8a9515ada680aa28b89f2c4">Multiply</a>(ref Matrix4x4 a, ref Matrix4x4 b, out Matrix4x4 result)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            var m11 = (((a.m00 * b.m00) + (a.m01 * b.m10)) + (a.m02 * b.m20)) + (a.m03 * b.m30);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            var m12 = (((a.m00 * b.m01) + (a.m01 * b.m11)) + (a.m02 * b.m21)) + (a.m03 * b.m31);</div>
@@ -213,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            result.m33 = m44;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a794c877c00ed7222fce9da69e06f93a7">  130</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a794c877c00ed7222fce9da69e06f93a7">Inverse</a>(ref Matrix4x4 m, out Matrix4x4 result)</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a9262df680c036b2231f82f95c13cd5f2">  130</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a9262df680c036b2231f82f95c13cd5f2">Inverse</a>(ref Matrix4x4 m, out Matrix4x4 result)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordtype">float</span> n1 = m.m00;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordtype">float</span> n2 = m.m01;</div>
@@ -277,7 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            result.m33 = (float)((<span class="keywordtype">double</span>)n1 * (double)n36 - (<span class="keywordtype">double</span>)n2 * (double)n38 + (<span class="keywordtype">double</span>)n3 * (double)n39) * n27;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a8b7ec86f2adcabef4d744e88e3e31392">  194</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_matrix_util.html#a8b7ec86f2adcabef4d744e88e3e31392">TransformPos</a>(ref Vector2 pos, ref Matrix4x4 matrix, out Vector2 result)</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_matrix_util.html#a2c0697f6069b0ab26bbac6cc71c38da1">  194</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_matrix_util.html#a2c0697f6069b0ab26bbac6cc71c38da1">TransformPos</a>(ref Vector2 pos, ref Matrix4x4 matrix, out Vector2 result)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            result = <span class="keyword">new</span> Vector2(</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                (pos.x * matrix.m00) + (pos.y * matrix.m10) + matrix.m30,</div>
@@ -286,19 +286,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a8b7ec86f2adcabef4d744e88e3e31392"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a8b7ec86f2adcabef4d744e88e3e31392">ActionLib.Utils.MatrixUtil.TransformPos</a></div><div class="ttdeci">static void TransformPos(ref Vector2 pos, ref Matrix4x4 matrix, out Vector2 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00194">MatrixUtil.cs:194</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a031c098a860505fbfd1bc8b34497f52e"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a031c098a860505fbfd1bc8b34497f52e">ActionLib.Utils.MatrixUtil.Create2D</a></div><div class="ttdeci">static Matrix4x4 Create2D(Vector2 scale, float rotation, Vector2 translation)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00045">MatrixUtil.cs:45</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a794c877c00ed7222fce9da69e06f93a7"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a794c877c00ed7222fce9da69e06f93a7">ActionLib.Utils.MatrixUtil.Inverse</a></div><div class="ttdeci">static void Inverse(ref Matrix4x4 m, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00130">MatrixUtil.cs:130</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html">ActionLib.Utils.MatrixUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00009">MatrixUtil.cs:9</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_ac5851843ee15f598b655103518037c22"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#ac5851843ee15f598b655103518037c22">ActionLib.Utils.MatrixUtil.Create2D</a></div><div class="ttdeci">static void Create2D(ref Vector2 scale, float rotation, ref Vector2 translation, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00052">MatrixUtil.cs:52</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a050cd4e024d69ceb42c65d82202737ee"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a050cd4e024d69ceb42c65d82202737ee">ActionLib.Utils.MatrixUtil.Multiply</a></div><div class="ttdeci">static void Multiply(ref Matrix4x4 a, ref Matrix4x4 b, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00094">MatrixUtil.cs:94</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a572fa9c59e97e1a47d6179d4d88d7c60"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a572fa9c59e97e1a47d6179d4d88d7c60">ActionLib.Utils.MatrixUtil.CreateScale2D</a></div><div class="ttdeci">static Matrix4x4 CreateScale2D(float scaleX, float scaleY)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00018">MatrixUtil.cs:18</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_a24447e7e5f62e89ed55cc8c289b12821"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#a24447e7e5f62e89ed55cc8c289b12821">ActionLib.Utils.MatrixUtil.CreateScale</a></div><div class="ttdeci">static void CreateScale(float x, float y, float z, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00025">MatrixUtil.cs:25</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_matrix_util_html_af054af35ebf4aac445223b11bb77620c"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_matrix_util.html#af054af35ebf4aac445223b11bb77620c">ActionLib.Utils.MatrixUtil.CreateScale2D</a></div><div class="ttdeci">static Matrix4x4 CreateScale2D(float scale)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00011">MatrixUtil.cs:11</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_ae97a5658776acfa4ea4f27a88ed7dc00"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#ae97a5658776acfa4ea4f27a88ed7dc00">Flunity.Utils.MatrixUtil.Create2D</a></div><div class="ttdeci">static void Create2D(ref Vector2 scale, float rotation, ref Vector2 translation, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00052">MatrixUtil.cs:52</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a13d5c6aba9e7aa6bee0b90c082c5da2c"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a13d5c6aba9e7aa6bee0b90c082c5da2c">Flunity.Utils.MatrixUtil.CreateScale</a></div><div class="ttdeci">static void CreateScale(float x, float y, float z, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00025">MatrixUtil.cs:25</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a67db9b01ea91a1b1ebd4671ad094fb5c"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a67db9b01ea91a1b1ebd4671ad094fb5c">Flunity.Utils.MatrixUtil.CreateScale2D</a></div><div class="ttdeci">static Matrix4x4 CreateScale2D(float scale)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00011">MatrixUtil.cs:11</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a2c0697f6069b0ab26bbac6cc71c38da1"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a2c0697f6069b0ab26bbac6cc71c38da1">Flunity.Utils.MatrixUtil.TransformPos</a></div><div class="ttdeci">static void TransformPos(ref Vector2 pos, ref Matrix4x4 matrix, out Vector2 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00194">MatrixUtil.cs:194</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a9262df680c036b2231f82f95c13cd5f2"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a9262df680c036b2231f82f95c13cd5f2">Flunity.Utils.MatrixUtil.Inverse</a></div><div class="ttdeci">static void Inverse(ref Matrix4x4 m, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00130">MatrixUtil.cs:130</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_ad727e4c4b8a9515ada680aa28b89f2c4"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#ad727e4c4b8a9515ada680aa28b89f2c4">Flunity.Utils.MatrixUtil.Multiply</a></div><div class="ttdeci">static void Multiply(ref Matrix4x4 a, ref Matrix4x4 b, out Matrix4x4 result)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00094">MatrixUtil.cs:94</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html">Flunity.Utils.MatrixUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00009">MatrixUtil.cs:9</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a24ef6b45278e509cb4b2001d54ad9f28"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a24ef6b45278e509cb4b2001d54ad9f28">Flunity.Utils.MatrixUtil.CreateScale2D</a></div><div class="ttdeci">static Matrix4x4 CreateScale2D(float scaleX, float scaleY)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00018">MatrixUtil.cs:18</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_matrix_util_html_a87a33d0d4f27255d9efdfd075f6cc32a"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_matrix_util.html#a87a33d0d4f27255d9efdfd075f6cc32a">Flunity.Utils.MatrixUtil.Create2D</a></div><div class="ttdeci">static Matrix4x4 Create2D(Vector2 scale, float rotation, Vector2 translation)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_util_8cs_source.html#l00045">MatrixUtil.cs:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:39 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

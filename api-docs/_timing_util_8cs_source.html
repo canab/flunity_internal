@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Utils/TimingUtil.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Utils/TimingUtil.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_66a4265f9abb7bff79ee234ad80021ff.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_ac71cf1efa7f06cf5692504644931ace.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,32 +89,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_timing_util_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>ActionLib.Utils</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>Flunity.Utils</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_utils_1_1_timing_util.html">TimingUtil</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_utils_1_1_timing_util.html">TimingUtil</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html#a45288cf26490092a688b10f5ace4486d">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_action_lib_1_1_utils_1_1_timing_util.html#a45288cf26490092a688b10f5ace4486d">TimeToFrames</a>(<span class="keywordtype">float</span> time)</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html#a12f596f9b0b238b00594ce6de529da97">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_flunity_1_1_utils_1_1_timing_util.html#a12f596f9b0b238b00594ce6de529da97">TimeToFrames</a>(<span class="keywordtype">float</span> time)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) Mathf.Round(0.001f * time * frameRate);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        }</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html#a4d92e71606ff006a2013ff4282d01b05">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_action_lib_1_1_utils_1_1_timing_util.html#a4d92e71606ff006a2013ff4282d01b05">FramesToTime</a>(<span class="keywordtype">int</span> frames)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html#a0c5c28fea9202a84e606f1fd91023de3">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_flunity_1_1_utils_1_1_timing_util.html#a0c5c28fea9202a84e606f1fd91023de3">FramesToTime</a>(<span class="keywordtype">int</span> frames)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">return</span> frames * 1000f / frameRate;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html#a75ecc68c3c30d5552c620ffa41228bc9">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_action_lib_1_1_utils_1_1_timing_util.html#a75ecc68c3c30d5552c620ffa41228bc9">FramesToTime</a>(<span class="keywordtype">long</span> frames)</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html#a450bd61074906fbb6a948b988ee32465">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_flunity_1_1_utils_1_1_timing_util.html#a450bd61074906fbb6a948b988ee32465">FramesToTime</a>(<span class="keywordtype">long</span> frames)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> frames * 1000f / frameRate;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">long</span> currentTick</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html#a6ecb46c849d2ff681aacd3bdd5d18025">   26</a></span>&#160;        {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html#a14b0b6eaab8ee3decc3488784b9333e2">   26</a></span>&#160;        {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> Time.frameCount; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> frameRate</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_timing_util.html#a9d548a02ec909f8ce72c1b9b58e8dba7">   31</a></span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_timing_util.html#aec1e21cb531309428fa21a40dc622ff4">   31</a></span>&#160;        {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                var frameRate = Application.targetFrameRate;</div>
@@ -127,14 +127,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_timing_util_html_a75ecc68c3c30d5552c620ffa41228bc9"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_timing_util.html#a75ecc68c3c30d5552c620ffa41228bc9">ActionLib.Utils.TimingUtil.FramesToTime</a></div><div class="ttdeci">static float FramesToTime(long frames)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00020">TimingUtil.cs:20</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_timing_util_html_a4d92e71606ff006a2013ff4282d01b05"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_timing_util.html#a4d92e71606ff006a2013ff4282d01b05">ActionLib.Utils.TimingUtil.FramesToTime</a></div><div class="ttdeci">static float FramesToTime(int frames)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00015">TimingUtil.cs:15</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_timing_util_html"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_timing_util.html">ActionLib.Utils.TimingUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00008">TimingUtil.cs:8</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_timing_util_html_a45288cf26490092a688b10f5ace4486d"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_timing_util.html#a45288cf26490092a688b10f5ace4486d">ActionLib.Utils.TimingUtil.TimeToFrames</a></div><div class="ttdeci">static int TimeToFrames(float time)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00010">TimingUtil.cs:10</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_timing_util_html_a450bd61074906fbb6a948b988ee32465"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_timing_util.html#a450bd61074906fbb6a948b988ee32465">Flunity.Utils.TimingUtil.FramesToTime</a></div><div class="ttdeci">static float FramesToTime(long frames)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00020">TimingUtil.cs:20</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_timing_util_html"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_timing_util.html">Flunity.Utils.TimingUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00008">TimingUtil.cs:8</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_timing_util_html_a12f596f9b0b238b00594ce6de529da97"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_timing_util.html#a12f596f9b0b238b00594ce6de529da97">Flunity.Utils.TimingUtil.TimeToFrames</a></div><div class="ttdeci">static int TimeToFrames(float time)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00010">TimingUtil.cs:10</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_timing_util_html_a0c5c28fea9202a84e606f1fd91023de3"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_timing_util.html#a0c5c28fea9202a84e606f1fd91023de3">Flunity.Utils.TimingUtil.FramesToTime</a></div><div class="ttdeci">static float FramesToTime(int frames)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_util_8cs_source.html#l00015">TimingUtil.cs:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:39 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

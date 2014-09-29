@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['name',['name',['../class_action_lib_1_1_display_1_1_display_object.html#af5b61016d06ff8d81a0f01b1fc4d2a9e',1,'ActionLib.Display.DisplayObject.name()'],['../struct_action_lib_1_1_display_1_1_frame_label.html#a63f89e14340a05e78296c744863ce6a9',1,'ActionLib.Display.FrameLabel.name()'],['../class_action_lib_1_1_resources_1_1_resource_bundle.html#a14bd29045a2ca04b0763542d851cb22e',1,'ActionLib.Resources.ResourceBundle.name()']]],
-  ['nestedanimationenabled',['nestedAnimationEnabled',['../class_action_lib_1_1_display_1_1_movie_clip.html#a43a26f1fa6296dd4b6c1f25a11a3b601',1,'ActionLib::Display::MovieClip']]],
-  ['nextindex_3c_20t_20_3e',['NextIndex&lt; T &gt;',['../class_action_lib_1_1_utils_1_1_array_util.html#acc1e7af01e3eb4b406e7d4332a10a266',1,'ActionLib::Utils::ArrayUtil']]],
-  ['none',['NONE',['../namespace_action_lib_1_1_display.html#a7f26427a2147a6d9e0b61dbde9331e7bab50339a10e1de285ac99d4c3990b8693',1,'ActionLib::Display']]],
-  ['numchildren',['numChildren',['../class_action_lib_1_1_display_1_1_display_container.html#a5857346826ec7eece1ea0362f314e56f',1,'ActionLib::Display::DisplayContainer']]]
+  ['name',['name',['../class_flunity_1_1_display_object.html#af50005627c7a352b334c7ac587ff49a0',1,'Flunity.DisplayObject.name()'],['../struct_flunity_1_1_frame_label.html#a1cf85a39fd6d84a9e6b4a0aa847bc21f',1,'Flunity.FrameLabel.name()'],['../class_flunity_1_1_resource_bundle.html#ad0e32b9ff5f6f744600201cf4a7bbc54',1,'Flunity.ResourceBundle.name()']]],
+  ['nestedanimationenabled',['nestedAnimationEnabled',['../class_flunity_1_1_movie_clip.html#acefac9acc34ee63ec33b457ffb60b4dd',1,'Flunity::MovieClip']]],
+  ['nextindex_3c_20t_20_3e',['NextIndex&lt; T &gt;',['../class_flunity_1_1_utils_1_1_array_util.html#a85260cdce7ca0684f3d8d4d9628e7fbe',1,'Flunity::Utils::ArrayUtil']]],
+  ['none',['NONE',['../namespace_flunity.html#a64030fa550e7750fe1aca9e690b2e507ab50339a10e1de285ac99d4c3990b8693',1,'Flunity']]],
+  ['numchildren',['numChildren',['../class_flunity_1_1_display_container.html#a121e85042d6d8811b0b8f4613d6d9084',1,'Flunity::DisplayContainer']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['fliphorizontal',['flipHorizontal',['../class_action_lib_1_1_display_1_1_flash_sprite.html#ab601a4c256570a0d71a74c53e810c069',1,'ActionLib::Display::FlashSprite']]],
-  ['flipvertical',['flipVertical',['../class_action_lib_1_1_display_1_1_flash_sprite.html#ac4bc26e97ad7bdfa35e0cc2a46bd4867',1,'ActionLib::Display::FlashSprite']]],
-  ['fontname',['fontName',['../class_action_lib_1_1_resources_1_1_font_resource.html#ad466e836b8978cfb19a40ec5ce2a4ab1',1,'ActionLib::Resources::FontResource']]],
-  ['fontsize',['fontSize',['../class_action_lib_1_1_resources_1_1_font_resource.html#ab559d82a3bf04b68fe09d98a6d2ff6ea',1,'ActionLib::Resources::FontResource']]],
-  ['framerate',['frameRate',['../class_action_lib_1_1_utils_1_1_timing_util.html#a9d548a02ec909f8ce72c1b9b58e8dba7',1,'ActionLib::Utils::TimingUtil']]],
-  ['frames',['frames',['../class_action_lib_1_1_resources_1_1_sprite_resource.html#a6807c43abbd9ecb12478090f5c780800',1,'ActionLib::Resources::SpriteResource']]]
+  ['fliphorizontal',['flipHorizontal',['../class_flunity_1_1_flash_sprite.html#adaba1d507afa05bf58c0d5c5777eb0b7',1,'Flunity::FlashSprite']]],
+  ['flipvertical',['flipVertical',['../class_flunity_1_1_flash_sprite.html#a7e49c1c2c32ba7b7da5f7f25e9058c37',1,'Flunity::FlashSprite']]],
+  ['fontname',['fontName',['../class_flunity_1_1_font_resource.html#adf6e9f1f508459e02db020332e449113',1,'Flunity::FontResource']]],
+  ['fontsize',['fontSize',['../class_flunity_1_1_font_resource.html#a731f83c6561dd0c0269e115a42a25b2d',1,'Flunity::FontResource']]],
+  ['framerate',['frameRate',['../class_flunity_1_1_utils_1_1_timing_util.html#aec1e21cb531309428fa21a40dc622ff4',1,'Flunity::Utils::TimingUtil']]],
+  ['frames',['frames',['../class_flunity_1_1_sprite_resource.html#a121d2c26e6267ce835ab85e3f93d1d10',1,'Flunity::SpriteResource']]]
 ];

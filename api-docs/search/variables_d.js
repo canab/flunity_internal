@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['resource',['resource',['../class_action_lib_1_1_display_1_1_flash_font.html#a717a5b5402724a66c60bad3a28ccf139',1,'ActionLib.Display.FlashFont.resource()'],['../class_action_lib_1_1_display_1_1_text_base.html#a04d759750b457686a990ae6e08772325',1,'ActionLib.Display.TextBase.resource()']]],
-  ['rightbottom',['rightBottom',['../struct_action_lib_1_1_display_1_1_sprite_quad.html#a7d9ce518a4167439bd66888925e2ecd8',1,'ActionLib::Display::SpriteQuad']]],
-  ['righttop',['rightTop',['../struct_action_lib_1_1_display_1_1_sprite_quad.html#a2b9ebce5518e57af4061caafa560b8e1',1,'ActionLib::Display::SpriteQuad']]],
-  ['rmult',['rMult',['../struct_action_lib_1_1_display_1_1_color_transform.html#a104b8bdcc09cb21131da56c9ab817f7a',1,'ActionLib::Display::ColorTransform']]],
-  ['roffset',['rOffset',['../struct_action_lib_1_1_display_1_1_color_transform.html#a4f9c2032299aa7e9bf0880d2f10fb14f',1,'ActionLib::Display::ColorTransform']]],
-  ['rotation',['ROTATION',['../class_action_lib_1_1_display_1_1_display_object.html#aed0dad49fc763cd12941e63f73c7cacb',1,'ActionLib::Display::DisplayObject']]],
-  ['rowspacing',['rowSpacing',['../class_action_lib_1_1_display_1_1_text_field.html#a2472c39e3059f4e389634cb4d4159a1d',1,'ActionLib::Display::TextField']]]
+  ['resource',['resource',['../class_flunity_1_1_text_base.html#ae39609a1e13fdb92061034e5de837d62',1,'Flunity::TextBase']]],
+  ['rightbottom',['rightBottom',['../struct_flunity_1_1_internal_1_1_sprite_quad.html#a1b3293195c5f81f2c52b310403c2581a',1,'Flunity::Internal::SpriteQuad']]],
+  ['righttop',['rightTop',['../struct_flunity_1_1_internal_1_1_sprite_quad.html#afae81dedbe403ccfcc6f22569b7b7228',1,'Flunity::Internal::SpriteQuad']]],
+  ['rmult',['rMult',['../struct_flunity_1_1_color_transform.html#a052763f60643033390934bc2ed99218b',1,'Flunity::ColorTransform']]],
+  ['roffset',['rOffset',['../struct_flunity_1_1_color_transform.html#a5b04ef2fda329c90e85b94a7e58b9728',1,'Flunity::ColorTransform']]],
+  ['rotation',['ROTATION',['../class_flunity_1_1_display_object.html#a6a53b9a89154f8e17d33cd0560c00900',1,'Flunity::DisplayObject']]],
+  ['rowspacing',['rowSpacing',['../class_flunity_1_1_text_field.html#a8b7e0d6549b07142d1bab3823f539236',1,'Flunity::TextField']]]
 ];

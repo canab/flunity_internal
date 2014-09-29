@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Motion/TweenManager.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/TweenManager.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_6607b37d955704db143306c144687dbc.html">Motion</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,25 +89,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_tween_manager_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> ActionLib.Common;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> ActionLib.Motion.Easing;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> ActionLib.Unity;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> ActionLib.Utils;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> Flunity.Common;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> Flunity.Easing;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> Flunity.Utils;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> Flunity.Internal;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>ActionLib.Motion</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Flunity</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html">TweenManager</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_tween_manager.html">TweenManager</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">        #region pool</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <a class="code" href="class_action_lib_1_1_common_1_1_object_pool.html">ObjectPool&lt;List&lt;Tweener&gt;</a>&gt; listPool = <span class="keyword">new</span> <a class="code" href="class_action_lib_1_1_common_1_1_object_pool.html">ObjectPool&lt;List&lt;Tweener&gt;</a>&gt;(</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <a class="code" href="class_flunity_1_1_common_1_1_object_pool.html">ObjectPool&lt;List&lt;Tweener&gt;</a>&gt; listPool = <span class="keyword">new</span> <a class="code" href="class_flunity_1_1_common_1_1_object_pool.html">ObjectPool&lt;List&lt;Tweener&gt;</a>&gt;(</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            () =&gt; <span class="keyword">new</span> List&lt;Tweener&gt;(tweensPerTarget))</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            resetAction = list =&gt; list.Clear(),</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        };</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a968e928f50c3782fb08be74f6306ef6e">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a968e928f50c3782fb08be74f6306ef6e">InitPool</a>(<span class="keywordtype">int</span> totalTweens, <span class="keywordtype">int</span> tweensPerTarget = 4, <span class="keywordtype">int</span> propsPerTween = 4)</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a2b5a25fb5e7f50f106439b9405a28bc6">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#a2b5a25fb5e7f50f106439b9405a28bc6">InitPool</a>(<span class="keywordtype">int</span> totalTweens, <span class="keywordtype">int</span> tweensPerTarget = 4, <span class="keywordtype">int</span> propsPerTween = 4)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            TweenManager.propsPerTween = propsPerTween;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            TweenManager.tweensPerTarget = tweensPerTarget;</div>
@@ -147,21 +147,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> TweenManager _instance;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">TweenManager</a> _instance;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> TweenManager instance</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <a class="code" href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">TweenManager</a> instance</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (_instance == null)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    _instance = <span class="keyword">new</span> TweenManager();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    _instance = <span class="keyword">new</span> <a class="code" href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">TweenManager</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> _instance;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a83610b5f651be77b5e834d4c1465ec4d">   78</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a83610b5f651be77b5e834d4c1465ec4d">HasAnyTweensOf</a>(<span class="keywordtype">object</span> target)</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a67a33b1a85a0a3458793549649f91cc5">   78</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_flunity_1_1_tween_manager.html#a67a33b1a85a0a3458793549649f91cc5">HasAnyTweensOf</a>(<span class="keywordtype">object</span> target)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            List&lt;Tweener&gt; tweeners;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -179,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a3bedb92aad44426748200b594690cc8d">   96</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a3bedb92aad44426748200b594690cc8d">RemoveAllTweensOf</a>(<span class="keywordtype">object</span> target)</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#aab41ad415069008e82fe3e3745215acc">   96</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#aab41ad415069008e82fe3e3745215acc">RemoveAllTweensOf</a>(<span class="keywordtype">object</span> target)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            List&lt;Tweener&gt; tweeners;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
@@ -199,25 +199,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">        #endregion </span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _defaultDuration = 500;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">private</span> <a class="code" href="namespace_action_lib_1_1_motion.html#aab49d54e9b3d91449c8e227e22f909f7">EasyFunction</a> _defaultEasing = Quad.easeOut;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">private</span> <a class="code" href="namespace_flunity_1_1_easing.html#a7c9bc5bd56fbae0ba2b40ccb5481bcb1">EasyFunction</a> _defaultEasing = Quad.easeOut;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> _head = null;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> _head = null;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _tweensCount = 0;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span> _isDispatcherActive = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span> _paused = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">private</span> Action _processingDelegate;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> _currentTween;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> _nextTweener;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> _currentTween;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> _nextTweener;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a4f916e7e518a29dd3b91c9b8f7170a8d">  127</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a4f916e7e518a29dd3b91c9b8f7170a8d">TweenManager</a>()</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">  127</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">TweenManager</a>()</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            _processingDelegate = ProcessTweens;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">        #region public</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a929c667057ff7770688239c93033aada">  137</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a929c667057ff7770688239c93033aada">Tween</a>(<span class="keywordtype">object</span> target)</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a5257f821edf2f32052b5cc313a7318ff">  137</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> <a class="code" href="class_flunity_1_1_tween_manager.html#a5257f821edf2f32052b5cc313a7318ff">Tween</a>(<span class="keywordtype">object</span> target)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">if</span> (target == null)</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException();</div>
@@ -229,14 +229,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">return</span> tweener;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#acef9193b01f3b0f73da00822a78d57da">  152</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> Tween&lt;TTarget, TValue&gt;(</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a998c036f62693c79bc72f8c02900302c">  152</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> <a class="code" href="class_flunity_1_1_tween_manager.html#a998c036f62693c79bc72f8c02900302c">Tween&lt;TTarget, TValue&gt;</a>(</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            TTarget target,</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordtype">int</span> duration,</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="interface_action_lib_1_1_motion_1_1_i_tween_property.html">ITweenProperty&lt;TValue&gt;</a> property,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="interface_flunity_1_1_common_1_1_i_tween_property.html">ITweenProperty&lt;TValue&gt;</a> property,</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            TValue to,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="namespace_action_lib_1_1_motion.html#aab49d54e9b3d91449c8e227e22f909f7">EasyFunction</a> easing = null) where TTarget : <span class="keyword">class</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="namespace_flunity_1_1_easing.html#a7c9bc5bd56fbae0ba2b40ccb5481bcb1">EasyFunction</a> easing = null) where TTarget : <span class="keyword">class</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            var tweener = Tween(target);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            var tweener = <a class="code" href="class_flunity_1_1_tween_manager.html#a5257f821edf2f32052b5cc313a7318ff">Tween</a>(target);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> (duration &gt;= 0)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                tweener.Duration(duration);</div>
@@ -249,7 +249,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">return</span> tweener;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        </div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#ab372c9fa57d173a905b914b9c45a8f4c">  172</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#ab372c9fa57d173a905b914b9c45a8f4c">PauseAllTweens</a>()</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a47ae6154fa8c258bf4fefa8b424b613c">  172</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#a47ae6154fa8c258bf4fefa8b424b613c">PauseAllTweens</a>()</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> (!_paused)</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            {</div>
@@ -258,7 +258,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#af9db25f96e0aea74bd0c6c713a6bbb02">  181</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#af9db25f96e0aea74bd0c6c713a6bbb02">ResumeAllTweens</a>()</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a243ffb334896540ebe6674bf3c3e5d45">  181</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#a243ffb334896540ebe6674bf3c3e5d45">ResumeAllTweens</a>()</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        {</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">if</span> (_paused)</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            {</div>
@@ -267,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a1c31f0f452f18cd6006df1cf4d7650e6">  190</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a1c31f0f452f18cd6006df1cf4d7650e6">RemoveAllTweens</a>()</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#aeca134633217e45034e387e73fe7992c">  190</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#aeca134633217e45034e387e73fe7992c">RemoveAllTweens</a>()</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        {</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            var tweener = _head;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">while</span> (tweener != null)</div>
@@ -278,7 +278,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            }</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#ad89e2e0bb121c4edd2115ef540c5e521">  204</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_manager.html#ad89e2e0bb121c4edd2115ef540c5e521">RemoveTweensOf</a>(<span class="keywordtype">object</span> target)</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#adb1520979edbb1596d057a1786452521">  204</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_tween_manager.html#adb1520979edbb1596d057a1786452521">RemoveTweensOf</a>(<span class="keywordtype">object</span> target)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        {</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            List&lt;Tweener&gt; tweeners;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            </div>
@@ -294,7 +294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> RemoveSafe(<a class="code" href="class_action_lib_1_1_motion_1_1_tweener.html">Tweener</a> tweener)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> RemoveSafe(<a class="code" href="class_flunity_1_1_tweener.html">Tweener</a> tweener)</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        {</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span> (tweener.isRemoved)</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">return</span>;</div>
@@ -305,20 +305,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                tweener.isRemoved = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> defaultDuration</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#aa129bbae4f7f726e9832238a23f219dd">  232</a></span>&#160;        {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_flunity_1_1_tween_manager.html#aa53ff5190f7dd59b8c9afcf7550ff6f5">defaultDuration</a></div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#aa53ff5190f7dd59b8c9afcf7550ff6f5">  232</a></span>&#160;        {</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _defaultDuration; }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            set { _defaultDuration = value; }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_action_lib_1_1_motion.html#aab49d54e9b3d91449c8e227e22f909f7">EasyFunction</a> defaultEasing</div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a10a733627028bdc8865d27cf1f8b6a87">  238</a></span>&#160;        {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_flunity_1_1_easing.html#a7c9bc5bd56fbae0ba2b40ccb5481bcb1">EasyFunction</a> <a class="code" href="class_flunity_1_1_tween_manager.html#a3ed5f93d7927268709273dea20dfe2f6">defaultEasing</a></div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a3ed5f93d7927268709273dea20dfe2f6">  238</a></span>&#160;        {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _defaultEasing; }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            set { _defaultEasing = value; }</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> tweensCount</div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a9bc4f9959842b3362f913d14c8951eee">  244</a></span>&#160;        {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_flunity_1_1_tween_manager.html#a897fc6b8acf0c3f004221277e454b10b">tweensCount</a></div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a897fc6b8acf0c3f004221277e454b10b">  244</a></span>&#160;        {</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _tweensCount; }</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
@@ -503,7 +503,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">            }</span></div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">        }</span></div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_manager.html#a239947f54960841e5b7e0a90a0e41af5">  434</a></span>&#160;<span class="comment">        public String GetDebugInfo()</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="class_flunity_1_1_tween_manager.html#a16ec9de251448c9faf67101005b610ea">  434</a></span>&#160;<span class="comment">        public String GetDebugInfo()</span></div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">        {</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">            var dictSize = _targetsTweenMap.Count;</span></div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"></span></div>
@@ -523,24 +523,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">        }</span></div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">    }</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">}</span></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a968e928f50c3782fb08be74f6306ef6e"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a968e928f50c3782fb08be74f6306ef6e">ActionLib.Motion.TweenManager.InitPool</a></div><div class="ttdeci">static void InitPool(int totalTweens, int tweensPerTarget=4, int propsPerTween=4)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00024">TweenManager.cs:24</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a83610b5f651be77b5e834d4c1465ec4d"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a83610b5f651be77b5e834d4c1465ec4d">ActionLib.Motion.TweenManager.HasAnyTweensOf</a></div><div class="ttdeci">static bool HasAnyTweensOf(object target)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00078">TweenManager.cs:78</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a1c31f0f452f18cd6006df1cf4d7650e6"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a1c31f0f452f18cd6006df1cf4d7650e6">ActionLib.Motion.TweenManager.RemoveAllTweens</a></div><div class="ttdeci">void RemoveAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00190">TweenManager.cs:190</a></div></div>
-<div class="ttc" id="namespace_action_lib_1_1_motion_html_aab49d54e9b3d91449c8e227e22f909f7"><div class="ttname"><a href="namespace_action_lib_1_1_motion.html#aab49d54e9b3d91449c8e227e22f909f7">ActionLib.Motion.EasyFunction</a></div><div class="ttdeci">delegate double EasyFunction(double t)</div><div class="ttdoc">Represents interpolating equation </div></div>
-<div class="ttc" id="interface_action_lib_1_1_motion_1_1_i_tween_property_html"><div class="ttname"><a href="interface_action_lib_1_1_motion_1_1_i_tween_property.html">ActionLib.Motion.ITweenProperty</a></div><div class="ttdoc">Interfacece for tween properties. </div><div class="ttdef"><b>Definition:</b> <a href="_i_tween_property_8cs_source.html#l00007">ITweenProperty.cs:7</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a4f916e7e518a29dd3b91c9b8f7170a8d"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a4f916e7e518a29dd3b91c9b8f7170a8d">ActionLib.Motion.TweenManager.TweenManager</a></div><div class="ttdeci">TweenManager()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00127">TweenManager.cs:127</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tweener_html"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tweener.html">ActionLib.Motion.Tweener</a></div><div class="ttdoc">Animates one or more properties on the target object. See TweenManager, TweenExt </div><div class="ttdef"><b>Definition:</b> <a href="_tweener_8cs_source.html#l00010">Tweener.cs:10</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_ad89e2e0bb121c4edd2115ef540c5e521"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#ad89e2e0bb121c4edd2115ef540c5e521">ActionLib.Motion.TweenManager.RemoveTweensOf</a></div><div class="ttdeci">void RemoveTweensOf(object target)</div><div class="ttdoc">Disposes all tweens of specified object </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00204">TweenManager.cs:204</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html">ActionLib.Motion.TweenManager</a></div><div class="ttdoc">Controller, calls update methon on all active tweens. </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00014">TweenManager.cs:14</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_common_1_1_object_pool_html"><div class="ttname"><a href="class_action_lib_1_1_common_1_1_object_pool.html">ActionLib.Common.ObjectPool</a></div><div class="ttdoc">Base class for generic pools. </div><div class="ttdef"><b>Definition:</b> <a href="_object_pool_8cs_source.html#l00008">ObjectPool.cs:8</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a929c667057ff7770688239c93033aada"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a929c667057ff7770688239c93033aada">ActionLib.Motion.TweenManager.Tween</a></div><div class="ttdeci">Tweener Tween(object target)</div><div class="ttdoc">Creates new Tweener </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00137">TweenManager.cs:137</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_a3bedb92aad44426748200b594690cc8d"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#a3bedb92aad44426748200b594690cc8d">ActionLib.Motion.TweenManager.RemoveAllTweensOf</a></div><div class="ttdeci">static void RemoveAllTweensOf(object target)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00096">TweenManager.cs:96</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_af9db25f96e0aea74bd0c6c713a6bbb02"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#af9db25f96e0aea74bd0c6c713a6bbb02">ActionLib.Motion.TweenManager.ResumeAllTweens</a></div><div class="ttdeci">void ResumeAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00181">TweenManager.cs:181</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_manager_html_ab372c9fa57d173a905b914b9c45a8f4c"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_manager.html#ab372c9fa57d173a905b914b9c45a8f4c">ActionLib.Motion.TweenManager.PauseAllTweens</a></div><div class="ttdeci">void PauseAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00172">TweenManager.cs:172</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a5257f821edf2f32052b5cc313a7318ff"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a5257f821edf2f32052b5cc313a7318ff">Flunity.TweenManager.Tween</a></div><div class="ttdeci">Tweener Tween(object target)</div><div class="ttdoc">Creates new Tweener </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00137">TweenManager.cs:137</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_aab41ad415069008e82fe3e3745215acc"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#aab41ad415069008e82fe3e3745215acc">Flunity.TweenManager.RemoveAllTweensOf</a></div><div class="ttdeci">static void RemoveAllTweensOf(object target)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00096">TweenManager.cs:96</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a3ed5f93d7927268709273dea20dfe2f6"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a3ed5f93d7927268709273dea20dfe2f6">Flunity.TweenManager.defaultEasing</a></div><div class="ttdeci">EasyFunction defaultEasing</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00238">TweenManager.cs:238</a></div></div>
+<div class="ttc" id="interface_flunity_1_1_common_1_1_i_tween_property_html"><div class="ttname"><a href="interface_flunity_1_1_common_1_1_i_tween_property.html">Flunity.Common.ITweenProperty</a></div><div class="ttdoc">Interfacece for tween properties. </div><div class="ttdef"><b>Definition:</b> <a href="_i_tween_property_8cs_source.html#l00007">ITweenProperty.cs:7</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a897fc6b8acf0c3f004221277e454b10b"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a897fc6b8acf0c3f004221277e454b10b">Flunity.TweenManager.tweensCount</a></div><div class="ttdeci">int tweensCount</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00244">TweenManager.cs:244</a></div></div>
+<div class="ttc" id="class_flunity_1_1_common_1_1_object_pool_html"><div class="ttname"><a href="class_flunity_1_1_common_1_1_object_pool.html">Flunity.Common.ObjectPool</a></div><div class="ttdoc">Base class for generic pools. </div><div class="ttdef"><b>Definition:</b> <a href="_object_pool_8cs_source.html#l00008">ObjectPool.cs:8</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a47ae6154fa8c258bf4fefa8b424b613c"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a47ae6154fa8c258bf4fefa8b424b613c">Flunity.TweenManager.PauseAllTweens</a></div><div class="ttdeci">void PauseAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00172">TweenManager.cs:172</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a67a33b1a85a0a3458793549649f91cc5"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a67a33b1a85a0a3458793549649f91cc5">Flunity.TweenManager.HasAnyTweensOf</a></div><div class="ttdeci">static bool HasAnyTweensOf(object target)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00078">TweenManager.cs:78</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html">Flunity.TweenManager</a></div><div class="ttdoc">Controller, calls update methon on all active tweens. </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00014">TweenManager.cs:14</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_ac7abe229d6a6c846064dc6e7cc1b17c7"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#ac7abe229d6a6c846064dc6e7cc1b17c7">Flunity.TweenManager.TweenManager</a></div><div class="ttdeci">TweenManager()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00127">TweenManager.cs:127</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a243ffb334896540ebe6674bf3c3e5d45"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a243ffb334896540ebe6674bf3c3e5d45">Flunity.TweenManager.ResumeAllTweens</a></div><div class="ttdeci">void ResumeAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00181">TweenManager.cs:181</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_aeca134633217e45034e387e73fe7992c"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#aeca134633217e45034e387e73fe7992c">Flunity.TweenManager.RemoveAllTweens</a></div><div class="ttdeci">void RemoveAllTweens()</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00190">TweenManager.cs:190</a></div></div>
+<div class="ttc" id="namespace_flunity_1_1_easing_html_a7c9bc5bd56fbae0ba2b40ccb5481bcb1"><div class="ttname"><a href="namespace_flunity_1_1_easing.html#a7c9bc5bd56fbae0ba2b40ccb5481bcb1">Flunity.Easing.EasyFunction</a></div><div class="ttdeci">delegate double EasyFunction(double t)</div><div class="ttdoc">Represents interpolating equation </div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a998c036f62693c79bc72f8c02900302c"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a998c036f62693c79bc72f8c02900302c">Flunity.TweenManager.Tween&lt; TTarget, TValue &gt;</a></div><div class="ttdeci">Tweener Tween&lt; TTarget, TValue &gt;(TTarget target, int duration, ITweenProperty&lt; TValue &gt; property, TValue to, EasyFunction easing=null)</div><div class="ttdoc">Creates new Tweener </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00152">TweenManager.cs:152</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_aa53ff5190f7dd59b8c9afcf7550ff6f5"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#aa53ff5190f7dd59b8c9afcf7550ff6f5">Flunity.TweenManager.defaultDuration</a></div><div class="ttdeci">int defaultDuration</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00232">TweenManager.cs:232</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tweener_html"><div class="ttname"><a href="class_flunity_1_1_tweener.html">Flunity.Tweener</a></div><div class="ttdoc">Animates one or more properties on the target object. See TweenManager, TweenExt </div><div class="ttdef"><b>Definition:</b> <a href="_tweener_8cs_source.html#l00012">Tweener.cs:12</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_a2b5a25fb5e7f50f106439b9405a28bc6"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#a2b5a25fb5e7f50f106439b9405a28bc6">Flunity.TweenManager.InitPool</a></div><div class="ttdeci">static void InitPool(int totalTweens, int tweensPerTarget=4, int propsPerTween=4)</div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00024">TweenManager.cs:24</a></div></div>
+<div class="ttc" id="class_flunity_1_1_tween_manager_html_adb1520979edbb1596d057a1786452521"><div class="ttname"><a href="class_flunity_1_1_tween_manager.html#adb1520979edbb1596d057a1786452521">Flunity.TweenManager.RemoveTweensOf</a></div><div class="ttdeci">void RemoveTweensOf(object target)</div><div class="ttdoc">Disposes all tweens of specified object </div><div class="ttdef"><b>Definition:</b> <a href="_tween_manager_8cs_source.html#l00204">TweenManager.cs:204</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:39 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

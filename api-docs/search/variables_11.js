@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visible',['VISIBLE',['../class_action_lib_1_1_display_1_1_display_object.html#aacaa192c22ce4d5a6497bdd54607d6fa',1,'ActionLib::Display::DisplayObject']]]
+  ['visible',['VISIBLE',['../class_flunity_1_1_display_object.html#ad568268d4dfde7ffe74498c2d1e16130',1,'Flunity::DisplayObject']]]
 ];

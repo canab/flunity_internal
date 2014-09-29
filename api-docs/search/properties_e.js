@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['scale',['scale',['../class_action_lib_1_1_display_1_1_display_object.html#a034453c5ae8d8e2cc0119402eae4da84',1,'ActionLib::Display::DisplayObject']]],
-  ['scalex',['scaleX',['../class_action_lib_1_1_display_1_1_display_object.html#a1bb1225e594a0b7f7f2c833da06582aa',1,'ActionLib::Display::DisplayObject']]],
-  ['scalexy',['scaleXY',['../class_action_lib_1_1_display_1_1_display_object.html#a8937df8264352588f481f7c7c98f652f',1,'ActionLib::Display::DisplayObject']]],
-  ['scaley',['scaleY',['../class_action_lib_1_1_display_1_1_display_object.html#a379f1db1b16cdb55aebf266f9a25afbf',1,'ActionLib::Display::DisplayObject']]],
-  ['scrollrect',['scrollRect',['../class_action_lib_1_1_display_1_1_flash_sprite.html#aaa739b9c478709dc9ac18e47fd4c1405',1,'ActionLib::Display::FlashSprite']]],
-  ['shader',['shader',['../class_action_lib_1_1_unity_1_1_flash_stage.html#a50c972eb2a4ec8ef3a8d81ed43096d16',1,'ActionLib::Unity::FlashStage']]],
-  ['sheetframe',['sheetFrame',['../class_action_lib_1_1_display_1_1_flash_sprite.html#afe749b7d058608cc3e08f1d3f4e4aff8',1,'ActionLib::Display::FlashSprite']]],
-  ['size',['size',['../class_action_lib_1_1_display_1_1_display_object.html#adcdb4dbba5fc87e2a09208be2b35f79b',1,'ActionLib.Display.DisplayObject.size()'],['../class_action_lib_1_1_display_1_1_empty_object.html#a238f61a18b3af26cd1b66b852ef98e0f',1,'ActionLib.Display.EmptyObject.size()'],['../class_action_lib_1_1_display_1_1_flash_sprite.html#ad6f9f583ddc544f4c310ddee01add503',1,'ActionLib.Display.FlashSprite.size()'],['../class_action_lib_1_1_display_1_1_sheet_frame.html#a5843d990c374bdfbef82857b2c19dd70',1,'ActionLib.Display.SheetFrame.size()'],['../class_action_lib_1_1_display_1_1_text_base.html#a79d016f936011b6bd7faa566b11b9f5c',1,'ActionLib.Display.TextBase.size()'],['../class_action_lib_1_1_display_1_1_text_field.html#a906319baaf843ac1116acbf36007b286',1,'ActionLib.Display.TextField.size()'],['../class_action_lib_1_1_display_1_1_touch_rect.html#a18d5b0bf5c64748f6707e66a844c9c98',1,'ActionLib.Display.TouchRect.size()'],['../class_action_lib_1_1_resources_1_1_sprite_resource.html#acb0cb90e4a0e44fc2a81de3238e676a2',1,'ActionLib.Resources.SpriteResource.size()']]],
-  ['stage',['stage',['../class_action_lib_1_1_display_1_1_display_object.html#a222a0eb14629c36633d7ea195e44a211',1,'ActionLib::Display::DisplayObject']]]
+  ['scale',['scale',['../class_flunity_1_1_display_object.html#ac6c306c1b5f6cca47981e6b2fba9a0a3',1,'Flunity::DisplayObject']]],
+  ['scalex',['scaleX',['../class_flunity_1_1_display_object.html#a9f1fe26e8dc4a9cf46e07b8c4953afcd',1,'Flunity::DisplayObject']]],
+  ['scalexy',['scaleXY',['../class_flunity_1_1_display_object.html#a72d17ae17c8ef662044755f996cccd9a',1,'Flunity::DisplayObject']]],
+  ['scaley',['scaleY',['../class_flunity_1_1_display_object.html#acfaabdde6b6ca7c40a84114c81dc325f',1,'Flunity::DisplayObject']]],
+  ['scrollrect',['scrollRect',['../class_flunity_1_1_flash_sprite.html#afe233a00e03edcd49026b80beb8260ac',1,'Flunity::FlashSprite']]],
+  ['shader',['shader',['../class_flunity_1_1_flash_stage.html#ae914e6160512b7b8ba4e8595e92bb92f',1,'Flunity::FlashStage']]],
+  ['sheetframe',['sheetFrame',['../class_flunity_1_1_flash_sprite.html#a5ae62def15331a6a875e17e73fa160f7',1,'Flunity::FlashSprite']]],
+  ['size',['size',['../class_flunity_1_1_display_object.html#a1cc069e12532efdfce94fe0c3a4d572d',1,'Flunity.DisplayObject.size()'],['../class_flunity_1_1_empty_object.html#a7777d6c4d6fc42ec762fff19059060a4',1,'Flunity.EmptyObject.size()'],['../class_flunity_1_1_flash_sprite.html#a6528f45ecccea42057a9937b2ed2bc2e',1,'Flunity.FlashSprite.size()'],['../class_flunity_1_1_sheet_frame.html#a8483b99bf1136a6ec25508ba23784e5e',1,'Flunity.SheetFrame.size()'],['../class_flunity_1_1_sprite_resource.html#ac80f94d1caa051beddd02a5e000f4d05',1,'Flunity.SpriteResource.size()'],['../class_flunity_1_1_text_base.html#a319a6ebd3e49b295976b78f0e460c636',1,'Flunity.TextBase.size()'],['../class_flunity_1_1_text_field.html#af0a01f5193ad391505c69eb834dbe49a',1,'Flunity.TextField.size()'],['../class_flunity_1_1_touch_rect.html#a364ad06dba13ea24d2a22026a390dfa4',1,'Flunity.TouchRect.size()']]],
+  ['stage',['stage',['../class_flunity_1_1_display_object.html#aa7f636890d57ab002f31b1051894c7e2',1,'Flunity::DisplayObject']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['blendstate',['blendState',['../class_action_lib_1_1_display_1_1_draw_options.html#ae5a803bf7334c3e4ef4cceca1fc7b9c0',1,'ActionLib::Display::DrawOptions']]],
-  ['bmult',['bMult',['../struct_action_lib_1_1_display_1_1_color_transform.html#af22e010a852953b5360165216b3b539c',1,'ActionLib::Display::ColorTransform']]],
-  ['boffset',['bOffset',['../struct_action_lib_1_1_display_1_1_color_transform.html#a3f549d2d935aeae0e3f6f55321ed092a',1,'ActionLib::Display::ColorTransform']]],
-  ['bounds',['bounds',['../class_action_lib_1_1_display_1_1_sheet_frame.html#a36870364a4d68583c1729a72ede1bc5c',1,'ActionLib::Display::SheetFrame']]],
-  ['brightness',['BRIGHTNESS',['../class_action_lib_1_1_display_1_1_display_object.html#a50dcd13c6c0b3969448663015663b8a3',1,'ActionLib::Display::DisplayObject']]],
-  ['bundlesroot',['bundlesRoot',['../class_action_lib_1_1_resources_1_1_flash_resources.html#a4f5285937323d853831d18a9c99acaf2',1,'ActionLib::Resources::FlashResources']]]
+  ['blendstate',['blendState',['../class_flunity_1_1_draw_options.html#a994db476cfd33b4c95ddee8ef3cdfd95',1,'Flunity::DrawOptions']]],
+  ['bmult',['bMult',['../struct_flunity_1_1_color_transform.html#a2efac170ae242ce4566f4f13db1fa03c',1,'Flunity::ColorTransform']]],
+  ['boffset',['bOffset',['../struct_flunity_1_1_color_transform.html#a7423a7d41245437c9edea9a318f9bf2e',1,'Flunity::ColorTransform']]],
+  ['bounds',['bounds',['../class_flunity_1_1_sheet_frame.html#abc03584842174eca833a7a287461c2c7',1,'Flunity::SheetFrame']]],
+  ['brightness',['BRIGHTNESS',['../class_flunity_1_1_display_object.html#a74a8d14d12c687b44b4de1d55ca28300',1,'Flunity::DisplayObject']]],
+  ['bundlesroot',['bundlesRoot',['../class_flunity_1_1_flash_resources.html#a322efd2f90cabded575b642089c01f70',1,'Flunity::FlashResources']]]
 ];

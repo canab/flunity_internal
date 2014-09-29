@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['height',['HEIGHT',['../class_action_lib_1_1_display_1_1_display_object.html#a4b70b01ee6a80199250f133571f2927a',1,'ActionLib.Display.DisplayObject.HEIGHT()'],['../class_action_lib_1_1_unity_1_1_flash_stage.html#ab283d59056cbd9241c70b67ef9f40972',1,'ActionLib.Unity.FlashStage.height()']]],
-  ['hide',['hide',['../class_action_lib_1_1_display_1_1_display_util.html#a16c2e49cbf9e84174464547179639f39',1,'ActionLib::Display::DisplayUtil']]],
-  ['hideobject',['hideObject',['../class_action_lib_1_1_display_1_1_display_util.html#a451995f977da8a53f421b0902350a099',1,'ActionLib::Display::DisplayUtil']]],
-  ['hitarea',['hitArea',['../class_action_lib_1_1_display_1_1_touch_listener.html#a0fe88dc32abbe0ad74779bdc6497412d',1,'ActionLib::Display::TouchListener']]]
+  ['height',['height',['../class_flunity_1_1_flash_stage.html#a06da5047c81b7d09f7800f7cb0a184c1',1,'Flunity.FlashStage.height()'],['../class_flunity_1_1_display_object.html#a155c2f3185a0b8799c3153427a94b2ce',1,'Flunity.DisplayObject.HEIGHT()']]],
+  ['hide',['hide',['../class_flunity_1_1_display_util.html#af5c2045c612469db7c7b94085d6b5659',1,'Flunity::DisplayUtil']]],
+  ['hideobject',['hideObject',['../class_flunity_1_1_display_util.html#a128c0c253e7d9ae0d39d2d42d775f707',1,'Flunity::DisplayUtil']]],
+  ['hitarea',['hitArea',['../class_flunity_1_1_touch_listener.html#a9912a5927f533e6bc323104d373effd6',1,'Flunity::TouchListener']]]
 ];

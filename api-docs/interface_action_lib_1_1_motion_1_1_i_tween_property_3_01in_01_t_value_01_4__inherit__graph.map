@@ -1,9 +1,0 @@
-<map id="ActionLib.Motion.ITweenProperty&lt; in TValue &gt;" name="ActionLib.Motion.ITweenProperty&lt; in TValue &gt;">
-<area shape="rect" id="node3" href="$class_action_lib_1_1_motion_1_1_properties_1_1_boolean_property_3_01_t_target_01_4.html" title="Interpolates boolean values " alt="" coords="438,5,629,46"/>
-<area shape="rect" id="node4" href="$class_action_lib_1_1_motion_1_1_properties_1_1_color_property_3_01_t_target_01_4.html" title="Interpolates Color values " alt="" coords="439,70,628,111"/>
-<area shape="rect" id="node5" href="$class_action_lib_1_1_motion_1_1_properties_1_1_color_transform_property_3_01_t_target_01_4.html" title="Interpolates ColorTransform values " alt="" coords="439,136,628,192"/>
-<area shape="rect" id="node6" href="$class_action_lib_1_1_motion_1_1_properties_1_1_float_property_3_01_t_target_01_4.html" title="Interpolates float values " alt="" coords="439,217,628,258"/>
-<area shape="rect" id="node7" href="$class_action_lib_1_1_motion_1_1_properties_1_1_int_property_3_01_t_target_01_4.html" title="Interpolates int values " alt="" coords="439,282,628,323"/>
-<area shape="rect" id="node8" href="$class_action_lib_1_1_motion_1_1_properties_1_1_vector_property_3_01_t_target_01_4.html" title="Interpolates Vector2 values " alt="" coords="439,347,628,389"/>
-<area shape="rect" id="node2" href="$interface_action_lib_1_1_motion_1_1_i_tween_property.html" title="Interfacece for tween properties. " alt="" coords="6,188,122,215"/>
-</map>

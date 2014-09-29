@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Resources/IResource.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Internal/IResource.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_2534fcd459793bcf6d54b718a2dd8211.html">Resources</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_817ebf2db588a7e02037448813fc6ecb.html">Internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,27 +89,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_i_resource_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>ActionLib.Resources</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>Flunity.Internal</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="interface_action_lib_1_1_resources_1_1_i_resource.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_action_lib_1_1_resources_1_1_i_resource.html">IResource</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="interface_flunity_1_1_internal_1_1_i_resource.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_flunity_1_1_internal_1_1_i_resource.html">IResource</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="interface_action_lib_1_1_resources_1_1_i_resource.html#ad2411c615b75a94061b62cfced04d390">   13</a></span>&#160;        String path { <span class="keyword">get</span>; }</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="interface_flunity_1_1_internal_1_1_i_resource.html#aa885704e26ee7125ec858ffceac7099a">   13</a></span>&#160;        String path { <span class="keyword">get</span>; }</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_action_lib_1_1_resources_1_1_i_resource.html#a4e1affa0a9dd730cb434a6371b4927fc">   18</a></span>&#160;        <span class="keywordtype">bool</span> isLoaded { <span class="keyword">get</span>; set; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_flunity_1_1_internal_1_1_i_resource.html#aedd368a92690e2db506342be08d0a2c8">   18</a></span>&#160;        <span class="keywordtype">bool</span> isLoaded { <span class="keyword">get</span>; set; }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> Load();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> Unload();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_action_lib_1_1_resources_1_1_i_resource.html#a3673c5ccc7cbb851a736087f71eb9746">   36</a></span>&#160;        <a class="code" href="class_action_lib_1_1_resources_1_1_resource_bundle.html">ResourceBundle</a> bundle { <span class="keyword">get</span>; set; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_flunity_1_1_internal_1_1_i_resource.html#aca73e523170af07a6e7f25030e266980">   36</a></span>&#160;        <a class="code" href="class_flunity_1_1_resource_bundle.html">ResourceBundle</a> bundle { <span class="keyword">get</span>; set; }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="ttc" id="class_action_lib_1_1_resources_1_1_resource_bundle_html"><div class="ttname"><a href="class_action_lib_1_1_resources_1_1_resource_bundle.html">ActionLib.Resources.ResourceBundle</a></div><div class="ttdoc">Contains set of resources which are loaded/unloaded simultaneously. </div><div class="ttdef"><b>Definition:</b> <a href="_resource_bundle_8cs_source.html#l00012">ResourceBundle.cs:12</a></div></div>
-<div class="ttc" id="interface_action_lib_1_1_resources_1_1_i_resource_html"><div class="ttname"><a href="interface_action_lib_1_1_resources_1_1_i_resource.html">ActionLib.Resources.IResource</a></div><div class="ttdoc">Base interface for all resources </div><div class="ttdef"><b>Definition:</b> <a href="_i_resource_8cs_source.html#l00008">IResource.cs:8</a></div></div>
+<div class="ttc" id="class_flunity_1_1_resource_bundle_html"><div class="ttname"><a href="class_flunity_1_1_resource_bundle.html">Flunity.ResourceBundle</a></div><div class="ttdoc">Contains set of resources which are loaded/unloaded simultaneously. </div><div class="ttdef"><b>Definition:</b> <a href="_resource_bundle_8cs_source.html#l00013">ResourceBundle.cs:13</a></div></div>
+<div class="ttc" id="interface_flunity_1_1_internal_1_1_i_resource_html"><div class="ttname"><a href="interface_flunity_1_1_internal_1_1_i_resource.html">Flunity.Internal.IResource</a></div><div class="ttdoc">Base interface for all resources </div><div class="ttdef"><b>Definition:</b> <a href="_i_resource_8cs_source.html#l00008">IResource.cs:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:38 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

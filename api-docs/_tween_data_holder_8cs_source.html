@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Motion/TweenDataHolder.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Internal/TweenDataHolder.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_6607b37d955704db143306c144687dbc.html">Motion</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_817ebf2db588a7e02037448813fc6ecb.html">Internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,30 +88,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="_tween_data_holder_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> ActionLib.Common;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> Flunity.Common;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>ActionLib.Motion</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>Flunity.Internal</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html">TweenDataHolder</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_flunity_1_1_internal_1_1_tween_data_holder.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_internal_1_1_tween_data_holder.html">TweenDataHolder</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html#ac3babfea01e18e356541a2d8a15eebc1">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_VALUES = 8;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_flunity_1_1_internal_1_1_tween_data_holder.html#a8345c3a33685c8617054fa861631b8e2">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_VALUES = 8;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html#ab53db160f5567747d617fa612efdd375">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> readonly <a class="code" href="class_action_lib_1_1_common_1_1_object_pool.html">ObjectPool&lt;TweenDataHolder&gt;</a> pool = <span class="keyword">new</span> <a class="code" href="class_action_lib_1_1_common_1_1_object_pool.html">ObjectPool&lt;TweenDataHolder&gt;</a>(</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            () =&gt; <span class="keyword">new</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html">TweenDataHolder</a>());</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_flunity_1_1_internal_1_1_tween_data_holder.html#af19bbf8076b1dbba5aa53437b18e1769">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> readonly <a class="code" href="class_flunity_1_1_common_1_1_object_pool.html">ObjectPool&lt;TweenDataHolder&gt;</a> pool = <span class="keyword">new</span> <a class="code" href="class_flunity_1_1_common_1_1_object_pool.html">ObjectPool&lt;TweenDataHolder&gt;</a>(</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            () =&gt; <span class="keyword">new</span> <a class="code" href="class_flunity_1_1_internal_1_1_tween_data_holder.html">TweenDataHolder</a>());</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html#adb48fdd52128b5946e7a443252d60c7d">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>[] startValue = <span class="keyword">new</span> <span class="keywordtype">float</span>[MAX_VALUES];</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html#a375d4c7d39d97bb8cc085cdce8972575">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>[] endValue = <span class="keyword">new</span> <span class="keywordtype">float</span>[MAX_VALUES];</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_flunity_1_1_internal_1_1_tween_data_holder.html#a60703e8e3a8dcce74d24a087b11bd23e">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>[] startValue = <span class="keyword">new</span> <span class="keywordtype">float</span>[MAX_VALUES];</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_flunity_1_1_internal_1_1_tween_data_holder.html#ad6a37603a40ebd7bd677041f67f339d1">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>[] endValue = <span class="keyword">new</span> <span class="keywordtype">float</span>[MAX_VALUES];</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_action_lib_1_1_motion_1_1_tween_data_holder.html">TweenDataHolder</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_flunity_1_1_internal_1_1_tween_data_holder.html">TweenDataHolder</a>()</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="ttc" id="class_action_lib_1_1_motion_1_1_tween_data_holder_html"><div class="ttname"><a href="class_action_lib_1_1_motion_1_1_tween_data_holder.html">ActionLib.Motion.TweenDataHolder</a></div><div class="ttdoc">Holds start/end values of tweened object. </div><div class="ttdef"><b>Definition:</b> <a href="_tween_data_holder_8cs_source.html#l00009">TweenDataHolder.cs:9</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_common_1_1_object_pool_html"><div class="ttname"><a href="class_action_lib_1_1_common_1_1_object_pool.html">ActionLib.Common.ObjectPool</a></div><div class="ttdoc">Base class for generic pools. </div><div class="ttdef"><b>Definition:</b> <a href="_object_pool_8cs_source.html#l00008">ObjectPool.cs:8</a></div></div>
+<div class="ttc" id="class_flunity_1_1_internal_1_1_tween_data_holder_html"><div class="ttname"><a href="class_flunity_1_1_internal_1_1_tween_data_holder.html">Flunity.Internal.TweenDataHolder</a></div><div class="ttdoc">Holds start/end values of tweened object. </div><div class="ttdef"><b>Definition:</b> <a href="_tween_data_holder_8cs_source.html#l00009">TweenDataHolder.cs:9</a></div></div>
+<div class="ttc" id="class_flunity_1_1_common_1_1_object_pool_html"><div class="ttname"><a href="class_flunity_1_1_common_1_1_object_pool.html">Flunity.Common.ObjectPool</a></div><div class="ttdoc">Base class for generic pools. </div><div class="ttdef"><b>Definition:</b> <a href="_object_pool_8cs_source.html#l00008">ObjectPool.cs:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:38 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Utils/DotNetUtil.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Utils/DotNetUtil.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_66a4265f9abb7bff79ee234ad80021ff.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_ac71cf1efa7f06cf5692504644931ace.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,24 +94,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> System.Reflection;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> System.Linq;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>ActionLib.Utils</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>Flunity.Utils</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_dot_net_util.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_utils_1_1_dot_net_util.html">DotNetUtil</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_dot_net_util.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_utils_1_1_dot_net_util.html">DotNetUtil</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a993a071ea03f4e546a4f7f7e86c1730f">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a993a071ea03f4e546a4f7f7e86c1730f">Restart</a>(<span class="keyword">this</span> Stopwatch timer)        </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_dot_net_util.html#a06a4f28dcb14d13ee660e42626fba10e">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_dot_net_util.html#a06a4f28dcb14d13ee660e42626fba10e">Restart</a>(<span class="keyword">this</span> Stopwatch timer)        </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            timer.Stop();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            timer.Reset();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            timer.Start();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aeeea987af5666d24b4b956d7eacdbf2f">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> StringBuilder <a class="code" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aeeea987af5666d24b4b956d7eacdbf2f">Clear</a>(<span class="keyword">this</span> StringBuilder builder)       </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_dot_net_util.html#ac6a12f22b72cfc25d56270130cd7a97e">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> StringBuilder <a class="code" href="class_flunity_1_1_utils_1_1_dot_net_util.html#ac6a12f22b72cfc25d56270130cd7a97e">Clear</a>(<span class="keyword">this</span> StringBuilder builder)       </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            builder.Length = 0;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">return</span> builder;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aee5047aa3949bc393908b620e56b879b">   28</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aee5047aa3949bc393908b620e56b879b">CopyTo</a>(<span class="keyword">this</span> Stream input, Stream output)</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_dot_net_util.html#ae398d560e5d7741652343f8ef9dce099">   28</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_flunity_1_1_utils_1_1_dot_net_util.html#ae398d560e5d7741652343f8ef9dce099">CopyTo</a>(<span class="keyword">this</span> Stream input, Stream output)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="comment">// This method exists only in .NET 4 and higher</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            </div>
@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a7b57051e9a2e81ef7ce7d31184fd68e2">   41</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> FieldInfo[] <a class="code" href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a7b57051e9a2e81ef7ce7d31184fd68e2">GetAllFields</a>(<span class="keyword">this</span> Type type )</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_dot_net_util.html#a66f6892aa60e62c43667747f8798213c">   41</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> FieldInfo[] <a class="code" href="class_flunity_1_1_utils_1_1_dot_net_util.html#a66f6892aa60e62c43667747f8798213c">GetAllFields</a>(<span class="keyword">this</span> Type type )</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="comment">// http://stackoverflow.com/a/1155549/154165</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            </div>
@@ -142,15 +142,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_dot_net_util_html_aeeea987af5666d24b4b956d7eacdbf2f"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aeeea987af5666d24b4b956d7eacdbf2f">ActionLib.Utils.DotNetUtil.Clear</a></div><div class="ttdeci">static StringBuilder Clear(this StringBuilder builder)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00022">DotNetUtil.cs:22</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_dot_net_util_html_a7b57051e9a2e81ef7ce7d31184fd68e2"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a7b57051e9a2e81ef7ce7d31184fd68e2">ActionLib.Utils.DotNetUtil.GetAllFields</a></div><div class="ttdeci">static FieldInfo[] GetAllFields(this Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00041">DotNetUtil.cs:41</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_dot_net_util_html"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_dot_net_util.html">ActionLib.Utils.DotNetUtil</a></div><div class="ttdoc">.NET methods which are not implemented in .NET 20 </div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00013">DotNetUtil.cs:13</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_dot_net_util_html_aee5047aa3949bc393908b620e56b879b"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_dot_net_util.html#aee5047aa3949bc393908b620e56b879b">ActionLib.Utils.DotNetUtil.CopyTo</a></div><div class="ttdeci">static void CopyTo(this Stream input, Stream output)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00028">DotNetUtil.cs:28</a></div></div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_dot_net_util_html_a993a071ea03f4e546a4f7f7e86c1730f"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_dot_net_util.html#a993a071ea03f4e546a4f7f7e86c1730f">ActionLib.Utils.DotNetUtil.Restart</a></div><div class="ttdeci">static void Restart(this Stopwatch timer)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00015">DotNetUtil.cs:15</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_dot_net_util_html_ae398d560e5d7741652343f8ef9dce099"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_dot_net_util.html#ae398d560e5d7741652343f8ef9dce099">Flunity.Utils.DotNetUtil.CopyTo</a></div><div class="ttdeci">static void CopyTo(this Stream input, Stream output)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00028">DotNetUtil.cs:28</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_dot_net_util_html_ac6a12f22b72cfc25d56270130cd7a97e"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_dot_net_util.html#ac6a12f22b72cfc25d56270130cd7a97e">Flunity.Utils.DotNetUtil.Clear</a></div><div class="ttdeci">static StringBuilder Clear(this StringBuilder builder)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00022">DotNetUtil.cs:22</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_dot_net_util_html_a06a4f28dcb14d13ee660e42626fba10e"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_dot_net_util.html#a06a4f28dcb14d13ee660e42626fba10e">Flunity.Utils.DotNetUtil.Restart</a></div><div class="ttdeci">static void Restart(this Stopwatch timer)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00015">DotNetUtil.cs:15</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_dot_net_util_html_a66f6892aa60e62c43667747f8798213c"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_dot_net_util.html#a66f6892aa60e62c43667747f8798213c">Flunity.Utils.DotNetUtil.GetAllFields</a></div><div class="ttdeci">static FieldInfo[] GetAllFields(this Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00041">DotNetUtil.cs:41</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_dot_net_util_html"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_dot_net_util.html">Flunity.Utils.DotNetUtil</a></div><div class="ttdoc">.NET methods which are not implemented in .NET 20 </div><div class="ttdef"><b>Definition:</b> <a href="_dot_net_util_8cs_source.html#l00013">DotNetUtil.cs:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:39 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

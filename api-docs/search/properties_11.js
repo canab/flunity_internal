@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['valignment',['vAlignment',['../class_action_lib_1_1_display_1_1_text_base.html#acfbb9b121e3659137703fb9b71c279ec',1,'ActionLib::Display::TextBase']]],
-  ['version',['version',['../interface_action_lib_1_1_common_1_1_i_reusable.html#a5c4cf45345c29277473ce9c86ac65637',1,'ActionLib.Common.IReusable.version()'],['../class_action_lib_1_1_display_1_1_display_object.html#ae16da605a8ed8854e40a61d2609f00ee',1,'ActionLib.Display.DisplayObject.version()']]],
-  ['visible',['visible',['../class_action_lib_1_1_display_1_1_display_object.html#aadda3aa81d539bef573f227d33a48cab',1,'ActionLib::Display::DisplayObject']]]
+  ['width',['width',['../class_flunity_1_1_display_object.html#a499f2e29cd33a2b1478cfa948c1e68cf',1,'Flunity.DisplayObject.width()'],['../class_flunity_1_1_sheet_frame.html#a330712a50be89e6bb6eb11b8e31af2de',1,'Flunity.SheetFrame.width()'],['../class_flunity_1_1_sprite_resource.html#a286d93e38dd425b2c6525cde747b44d3',1,'Flunity.SpriteResource.width()']]]
 ];

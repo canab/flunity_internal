@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quadcollection',['QuadCollection',['../class_action_lib_1_1_display_1_1_quad_collection.html#a7e96ccf905ca68d6cbbe4a55fa66a94a',1,'ActionLib.Display.QuadCollection.QuadCollection()'],['../class_action_lib_1_1_display_1_1_quad_collection.html#a0296abea4cfde386d5694afc35f486f4',1,'ActionLib.Display.QuadCollection.QuadCollection(int size)']]]
+  ['quadcollection',['QuadCollection',['../class_flunity_1_1_internal_1_1_quad_collection.html#a76568d6daa9b1dea97a0c7df9137d54a',1,'Flunity.Internal.QuadCollection.QuadCollection()'],['../class_flunity_1_1_internal_1_1_quad_collection.html#a259dbe98829edb0e680fb02061af4319',1,'Flunity.Internal.QuadCollection.QuadCollection(int size)']]]
 ];

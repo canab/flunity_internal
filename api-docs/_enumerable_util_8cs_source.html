@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>ActionLib: /Users/air/projects/flunity/SampleProject/Assets/ActionLib/Utils/EnumerableUtil.cs Source File</title>
+<title>Flunity: /Users/air/projects/flunity/flunity-main/SampleProject/Assets/Flunity/Utils/EnumerableUtil.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ActionLib
+   <div id="projectname">Flunity
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c47d3c416bd9d1d3d4f32110424c4a5b.html">ActionLib</a></li><li class="navelem"><a class="el" href="dir_66a4265f9abb7bff79ee234ad80021ff.html">Utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_3b7046d6e11f38dbfca4c4831a2c65b0.html">SampleProject</a></li><li class="navelem"><a class="el" href="dir_c7f0a8b1cfcf4f66ff23ff37c6932efc.html">Assets</a></li><li class="navelem"><a class="el" href="dir_84f12c9367fad81a65768821157b54c6.html">Flunity</a></li><li class="navelem"><a class="el" href="dir_ac71cf1efa7f06cf5692504644931ace.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,11 +91,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Text;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>ActionLib.Utils</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Flunity.Utils</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_enumerable_util.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_action_lib_1_1_utils_1_1_enumerable_util.html">EnumerableUtil</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_enumerable_util.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_flunity_1_1_utils_1_1_enumerable_util.html">EnumerableUtil</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_enumerable_util.html#a514bbfbea119c072a6c71399964da41a">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> JoinStrings&lt;T&gt;(<span class="keyword">this</span> IEnumerable&lt;T&gt; source, Func&lt;T, string&gt; projection, <span class="keywordtype">string</span> separator = <span class="stringliteral">&quot;,&quot;</span>)</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_enumerable_util.html#a9da92e2fb286158d9c0f20b4a808c375">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> JoinStrings&lt;T&gt;(<span class="keyword">this</span> IEnumerable&lt;T&gt; source, Func&lt;T, string&gt; projection, <span class="keywordtype">string</span> separator = <span class="stringliteral">&quot;,&quot;</span>)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            var builder = <span class="keyword">new</span> StringBuilder();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordtype">bool</span> first = <span class="keyword">true</span>;</div>
@@ -114,12 +114,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> builder.ToString();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_enumerable_util.html#ab21ac14a583fb9a57379b1af0462b6d0">   31</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> JoinStrings&lt;T&gt;(<span class="keyword">this</span> IEnumerable&lt;T&gt; source, <span class="keywordtype">string</span> separator = <span class="stringliteral">&quot;,&quot;</span>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_enumerable_util.html#a27386396314fe3540044c40e7c72e6d7">   31</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> JoinStrings&lt;T&gt;(<span class="keyword">this</span> IEnumerable&lt;T&gt; source, <span class="keywordtype">string</span> separator = <span class="stringliteral">&quot;,&quot;</span>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">return</span> JoinStrings(source, t =&gt; t.ToString(), separator);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_action_lib_1_1_utils_1_1_enumerable_util.html#a532e05ff1327cc856a382730d192c434">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;T&gt; AsEnumerable&lt;T&gt;(<span class="keyword">this</span> IEnumerator&lt;T&gt; enumerator)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_flunity_1_1_utils_1_1_enumerable_util.html#ab2db4b810e44b23708ef6a261b9d687e">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;T&gt; AsEnumerable&lt;T&gt;(<span class="keyword">this</span> IEnumerator&lt;T&gt; enumerator)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">while</span> (enumerator.MoveNext())</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
@@ -129,11 +129,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;         </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="class_action_lib_1_1_utils_1_1_enumerable_util_html"><div class="ttname"><a href="class_action_lib_1_1_utils_1_1_enumerable_util.html">ActionLib.Utils.EnumerableUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_enumerable_util_8cs_source.html#l00010">EnumerableUtil.cs:10</a></div></div>
+<div class="ttc" id="class_flunity_1_1_utils_1_1_enumerable_util_html"><div class="ttname"><a href="class_flunity_1_1_utils_1_1_enumerable_util.html">Flunity.Utils.EnumerableUtil</a></div><div class="ttdoc">Helper methods </div><div class="ttdef"><b>Definition:</b> <a href="_enumerable_util_8cs_source.html#l00010">EnumerableUtil.cs:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 20:23:09 for ActionLib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 00:32:39 for Flunity by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
