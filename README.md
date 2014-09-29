@@ -13,10 +13,10 @@ The framework consists of two parts:
 - Exporting animated symbols from Flash as as bitmap sequence.
 - Exporting animated symbols from Flash as timeline animation.
 - Packing sprites to sprite sheet.
-- Support basic geometric transforms: scale, rotation, position.
-- Support color transforms: brightness and tint for each channel.
+- Support for basic geometric transforms: scale, rotation, position.
+- Support for color transforms: brightness and tint for each channel.
 - Design in Flash complex compositions of visual objects. Hierarchical structure of visual objects in such compositions is accessible from unity code.
-- Support of text rendering. Font is being exported as set of bitmaps (for each used character).
+- Support for text rendering. Font is being exported as set of bitmaps (for each used character).
 - Code generation: C# code is being generated for all resource items. Compile-time checking prevents from errors like if someone accidentally removes or renames symbols in Flash.
 
 # Runtime Features
