@@ -13,7 +13,7 @@ namespace Flunity.Display
 		/// <summary>
 		/// Cached delegate: DisplayObject.DetachFromContainer()
 		/// </summary>
-		public static readonly Action<object> detachObject = it => ((DisplayObject)it).DetachFromContainer();
+		public static readonly Action<object> detachObject = it => ((DisplayObject)it).DetachFromParent();
 
 		/// <summary>
 		/// Cached delegate: DisplayObject.visible = false
@@ -28,7 +28,7 @@ namespace Flunity.Display
 		/// <summary>
 		/// Cached delegate: DisplayObject.DetachFromContainer()
 		/// </summary>
-		public static readonly Action<DisplayObject> detach = it => it.DetachFromContainer();
+		public static readonly Action<DisplayObject> detach = it => it.DetachFromParent();
 
 		/// <summary>
 		/// Cached delegate: DisplayObject.visible = false
@@ -113,7 +113,7 @@ namespace Flunity.Display
 			if (duration == 0 && delay == 0)
 			{
 				target.alpha = 0;
-				target.DetachFromContainer();
+				target.DetachFromParent();
 			}
 			else
 			{
@@ -306,7 +306,7 @@ namespace Flunity.Display
 		/// <summary>
 		/// Detaches target from its parent (parent can be null).
 		/// </summary>
-		public static void DetachFromContainer(this DisplayObject target)
+		public static void DetachFromParent(this DisplayObject target)
 		{
 			if (target.parent != null)
 				target.parent.RemoveChild(target);

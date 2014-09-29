@@ -101,7 +101,7 @@ namespace Flunity.Motion
 		}
 
 		/// <summary>
-		/// Sets an easing equation. ActionLib.Motion.Easing namespace
+		/// Sets an easing equation. Flunity.Motion.Easing namespace
 		/// </summary>
 		public Tweener Easing(EasyFunction value)
 		{

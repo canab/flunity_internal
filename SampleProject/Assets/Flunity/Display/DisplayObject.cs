@@ -86,8 +86,8 @@ namespace Flunity.Display
 		public static readonly VectorProperty<DisplayObject> ANCHOR
 			= new VectorProperty<DisplayObject>(o => o.anchor, (o, value) => o.anchor = value);
 		
-		public static readonly BooleanProperty<DisplayObject> ENABLED
-			= new BooleanProperty<DisplayObject>(o => o.enabled, (o, value) => o.enabled = value);
+		public static readonly BooleanProperty<DisplayObject> TOUCH_ENABLED
+			= new BooleanProperty<DisplayObject>(o => o.isTouchEnabled, (o, value) => o.isTouchEnabled = value);
 		
 		public static readonly BooleanProperty<DisplayObject> VISIBLE
 			= new BooleanProperty<DisplayObject>(o => o.visible, (o, value) => o.visible = value);
@@ -116,8 +116,8 @@ namespace Flunity.Display
 		{
 			_visible = true;
 			_animation = null;
-			_useParentColor = true;
-			_enabled = true;
+			_isColorInherited = true;
+			_isTouchEnabled = true;
 
 			name = null;
 			drawOptions = null;
@@ -191,7 +191,7 @@ namespace Flunity.Display
 
 		internal protected virtual void UpdateColor()
 		{
-			if (_parent != null && _useParentColor)
+			if (_parent != null && _isColorInherited)
 				ColorTransform.Compose(ref _parent.compositeColor, ref _colorTransform, out compositeColor);
 			else
 				compositeColor = colorTransform;
@@ -200,18 +200,18 @@ namespace Flunity.Display
 
 		#region useParentColor
 
-		private bool _useParentColor;
+		private bool _isColorInherited;
 
 		/// <summary>
 		/// If true, color will not be composed with parent color.
 		/// Parent color transform will not make effect on color of this object.
 		/// </summary>
-		public bool useParentColor
+		public bool isColorInherited
 		{
-			get { return _useParentColor; }
+			get { return _isColorInherited; }
 			set
 			{
-				_useParentColor = value;
+				_isColorInherited = value;
 				colorDirty = true;
 			}
 		}
@@ -710,7 +710,7 @@ namespace Flunity.Display
 		private bool _visible;
 
 		/// <summary>
-		/// Gets or sets a value indicating whether this <see cref="ActionLib.Display.DisplayObject"/> is visible.
+		/// Gets or sets a value indicating whether this <see cref="Flunity.Display.DisplayObject"/> is visible.
 		/// Invisible object does not update any transformations.
 		/// </summary>
 		public bool visible
@@ -730,20 +730,20 @@ namespace Flunity.Display
 
 		#region enabled
 
-		private bool _enabled;
+		private bool _isTouchEnabled;
 
 		/// <summary>
-		/// Gets or sets a value indicating whether this <see cref="ActionLib.Display.DisplayObject"/> is enabled.
+		/// Gets or sets a value indicating whether this <see cref="Flunity.Display.DisplayObject"/> is enabled.
 		/// Disabled object does not handle touch events.
 		/// </summary>
-		public bool enabled
+		public bool isTouchEnabled
 		{
-			get { return _enabled; }
+						get { return _isTouchEnabled; }
 			set
 			{
-				if (_enabled != value)
+				if (_isTouchEnabled != value)
 				{
-					_enabled = value;
+					_isTouchEnabled = value;
 					OnEnabledChange();
 				}
 			}
@@ -805,7 +805,7 @@ namespace Flunity.Display
 		}
 
 		/// <summary>
-		/// Gets a value indicating whether this <see cref="ActionLib.Display.DisplayObject"/> is on stage.
+		/// Gets a value indicating whether this <see cref="Flunity.Display.DisplayObject"/> is on stage.
 		/// </summary>
 		public bool isOnStage
 		{

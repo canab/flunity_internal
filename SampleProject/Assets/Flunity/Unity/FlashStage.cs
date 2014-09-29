@@ -125,7 +125,7 @@ namespace Flunity.Unity
 			debugBatch = new DrawBatch(this, null, 1);
 
 			if (shader == null)
-				shader = Shader.Find("ActionLib/Default");
+				shader = Shader.Find("Flunity/Default");
 		}
 
 		void OnEnable()

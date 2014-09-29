@@ -258,7 +258,7 @@ namespace Flunity.Display
 		{
 			for (var t = target; t != null; t = t.parent)
 			{
-				if (!t.enabled || !t.visible)
+				if (!t.isTouchEnabled || !t.visible)
 					return false;
 			}
 			return true;

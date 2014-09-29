@@ -1,4 +1,4 @@
-﻿Shader "ActionLib/NoTint" {
+﻿Shader "Flunity/NoTint" {
 Properties
 {
 	_MainTex ("Particle Texture", 2D) = "white" {}

@@ -1,4 +1,4 @@
-﻿Shader "ActionLib/Default"
+﻿Shader "Flunity/Default"
 {
 	Properties
 	{
