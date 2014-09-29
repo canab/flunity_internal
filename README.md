@@ -20,8 +20,8 @@ The framework consists of two parts:
 - Code generation: C# code is being generated for all resource items. Compile-time checking prevents from errors like if someone accidentally removes or renames symbols in Flash.
 
 # Runtime Features
-- Clean and robust API for manipulating of composition of visual oblects
-- Flash objects are rendered in a **FlashStage** component using one draw call. Whoole flash scene is rendered as one mesh.
+- Clean and robust API for manipulating of composition of visual objects
+- Flash objects are rendered in a **FlashStage** component using one draw call. Whole flash scene is rendered as one mesh.
 - Touch events for single object
 - Tween library for programmatic animation
 
