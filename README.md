@@ -21,7 +21,7 @@ The framework consists of two parts:
 
 # Runtime Features
 - Clean and robust API for manipulating of composition of visual objects
-- Flash objects are rendered in a **FlashStage** component using one draw call. Whole flash scene is rendered as one mesh.
+- Flash objects are rendered in a [**FlashStage**](http://nravo.github.io/flunity/api-docs/class_action_lib_1_1_unity_1_1_flash_stage.html) component using one draw call. Whole flash scene is rendered as one mesh.
 - Touch events for single object
 - Tween library for programmatic animation
 
