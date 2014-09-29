@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-using FlashBundles;
-using Flunity;
+﻿using FlashBundles;
 
 namespace Examples
 {
@@ -8,8 +6,7 @@ namespace Examples
 	{
 		protected override void CreateScene()
 		{
-			stage.root.AddChild(new MovieClip(SceneBundle.McScene1));
+			new McDemo1(stage.root);
 		}
 	}
 }
-
