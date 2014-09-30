@@ -85,5 +85,17 @@ namespace Flunity
 			get { return _maxLengthSuffix; }
 			set { _maxLengthSuffix = value; }
 		}
+
+		public override Vector2 size 
+		{
+			get
+			{
+				return autoSize ? textSize : _size;
+			}
+			set 
+			{
+				_size = value;
+			}
+		}
 	}
 }

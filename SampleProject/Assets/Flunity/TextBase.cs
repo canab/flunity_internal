@@ -12,7 +12,6 @@ namespace Flunity
 	{
 		public HAlign hAlignment { get; set; }
 		public VAlign vAlignment { get; set; }
-		public float fontScale;
 
 		protected readonly FontResource resource;
 
@@ -27,8 +26,9 @@ namespace Flunity
 		private readonly QuadCollection _textQuads = new QuadCollection();
 		private readonly QuadCollection _shadowQuads = new QuadCollection();
 
-		private Vector2 _size = Vector2.zero;
+		protected Vector2 _size = Vector2.zero;
 		private bool _autoSize = false;
+		private float _fontScale = 1;
 
 		protected TextBase(FontResource resource, float fontScale)
 		{
@@ -73,6 +73,20 @@ namespace Flunity
 					transformDirty = true;
 					InvalidateTextSize();
 				}
+			}
+		}
+
+		/// <summary>
+		/// Scale of the font
+		/// </summary>
+		public float fontScale
+		{
+			get { return _fontScale; }
+			set
+			{
+				_fontScale = value;
+				transformDirty = false;
+				InvalidateTextSize();
 			}
 		}
 
@@ -171,7 +185,7 @@ namespace Flunity
 				if (c < ' ')
 					continue;
 				var charInfo = resource.GetCharInfo(c) ?? resource.GetDefaultCharInfo();
-				charsWidth += charInfo.symbolWidth + spacing;
+				charsWidth += charInfo.symbolWidth;
 			}
 
 			var w = (charsWidth + spacing) * fontScale;
@@ -269,7 +283,7 @@ namespace Flunity
 
 		public override Vector2 size
 		{
-			get { return _autoSize ? textSize : _size; }
+			get { return _size; }
 			set { _size = value; }
 		}
 

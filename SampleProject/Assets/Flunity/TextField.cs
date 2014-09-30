@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Flunity.Utils;
 
@@ -17,7 +18,6 @@ namespace Flunity
 		private readonly float _rowHeight;
 		private readonly List<TextRow> _rows = new List<TextRow>(4);
 		private bool _textDirty = true;
-		private float _lineWidth = 400;
 
 		public TextField(DisplayContainer parent, string fontName, int fontSize = 0) : this(fontName, fontSize)
 		{
@@ -52,7 +52,7 @@ namespace Flunity
 
 			foreach (var row in _rows)
 			{
-				rowPos.x = textTopLeft.x + GetRowOffsetX(row.textWidth);
+				rowPos.x = GetRowOffsetX(row.textWidth);
 				AddWordQuads(row.text, rowPos);
 				rowPos.y += ((_rowHeight + rowSpacing));
 			}
@@ -62,17 +62,23 @@ namespace Flunity
 		{
 			if (hAlignment == HAlign.LEFT)
 				return 0;
-			
-			if (hAlignment == HAlign.CENTER)
-				return (0.5f * (_lineWidth - rowWidth)).RoundToInt();
 
-			return _lineWidth - rowWidth;
+			if (hAlignment == HAlign.CENTER)
+				return (0.5f * (width - rowWidth)).RoundToInt();
+
+			return width - rowWidth;
 		}
 
 		protected override Vector2 GetTextSize()
 		{
 			ValidateText();
-			return new Vector2(_lineWidth, _rows.Count * _rowHeight + (_rows.Count - 1) * rowSpacing);
+
+			var w = _rows.Max(r => r.textWidth);
+			var h = _rows.Count * _rowHeight + (_rows.Count - 1) * rowSpacing;
+
+			return new Vector2(
+				(float) Math.Ceiling(w),
+				(float) Math.Ceiling(h));
 		}
 
 		internal void ValidateText()
@@ -96,6 +102,9 @@ namespace Flunity
 			var words = string.Join("\n ", textString.Split('\n')).Split(SPACE_CHAR);
 			var currentRow = TextRow.empty;
 			var wordIndex = 0;
+
+			// don't use size/width properties to avoid stack overflow when autoSize == true;
+			var maxWidth = _size.x;
 
 			while (wordIndex < words.Length)
 			{
@@ -121,7 +130,7 @@ namespace Flunity
 
 				var wordWidth = CalculateTextSize(word).x;
 				var spacing = currentRow.text.Length == 0 ? 0 : spaceWidth;
-				var doesFit = currentRow.textWidth + spacing + wordWidth <= _lineWidth;
+				var doesFit = currentRow.textWidth + spacing + wordWidth <= maxWidth;
 				var needNewLine = !doesFit || wordIndex == words.Length - 1 || explicitLineBrake;
 
 				if (currentRow.text.Length == 0)
@@ -163,27 +172,18 @@ namespace Flunity
 			}
 		}
 
-		/// <summary>
-		/// Maximum with text row can have. Longer rows will be wrapped.
-		/// </summary>
-		public float lineWidth
-		{
-			get { return _lineWidth; }
-			set
-			{
-				_lineWidth = value;
-				_textDirty = true;
-			}
-		}
-
 		public override Vector2 size 
 		{
-			get { return base.size; }
-
+			get
+			{
+				return autoSize
+					? new Vector2(_size.x, textSize.y)
+					: _size;
+			}
 			set 
 			{
-				base.size = value;
-				lineWidth = size.x;
+				_size = value;
+				_textDirty = true;
 			}
 		}
 	}
