@@ -1,4 +1,11 @@
 <resources>
+  <timeline path="SceneBundle/McDemo_Animation">
+    <resources>flash/text/TextField</resources>
+    <instances>0,</instances>
+    <frames>
+      <f>0,40,40,0,1,1,1,1,1,1,0,0,0,0</f>
+    </frames>
+  </timeline>
   <timeline path="SceneBundle/McDemo_TouchAndTween">
     <resources>flash/text/TextField,SceneBundle/circle_sprite</resources>
     <instances>0,|1,|1,|1,|1,|1,</instances>

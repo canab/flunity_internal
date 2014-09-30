@@ -7,6 +7,7 @@ namespace FlashBundles
 {
 	public class SceneBundle : ContentBundle
 	{
+		public static readonly MovieClipResource McDemo_Animation = new MovieClipResource("SceneBundle/McDemo_Animation");
 		public static readonly MovieClipResource McDemo_TouchAndTween = new MovieClipResource("SceneBundle/McDemo_TouchAndTween");
 		public static readonly SpriteResource circle_sprite = new SpriteResource("SceneBundle/circle_sprite");
 		public static readonly FontResource default_font = new FontResource("SceneBundle/default_font");
@@ -15,6 +16,28 @@ namespace FlashBundles
 
 		private SceneBundle() {}
 	}
+
+	public class McDemo_Animation : MovieClip
+	{
+		protected override DisplayObject[] ConstructInstances()
+		{
+			var instances = new DisplayObject[1];
+			instances[0] = new TextField("Arial", 24)
+			{
+				text = "Flash animation\n",
+				textColor = new Color32(255, 255, 204, 255),
+				hAlignment = HAlign.CENTER,
+				size = new Vector2(944f, 30f),
+				shadowColor = new Color32(0, 51, 102, 255),
+				shadowOffset = new Vector2(1f, 1f),
+			};
+			return instances;
+		}
+
+		public McDemo_Animation() : base(SceneBundle.McDemo_Animation) {}
+		public McDemo_Animation(DisplayContainer parent) : this() { this.parent = parent; }
+	}
+
 
 	public class McDemo_TouchAndTween : MovieClip
 	{
