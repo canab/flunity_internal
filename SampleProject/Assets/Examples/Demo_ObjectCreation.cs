@@ -1,7 +1,6 @@
 ﻿using FlashBundles;
 using UnityEngine;
 using Flunity;
-using Flunity.Easing;
 using Flunity.Utils;
 
 namespace Examples
@@ -16,8 +15,6 @@ namespace Examples
 		void CreateObject()
 		{
 			var sprite = SceneBundle.circle_sprite.CreateInstance();
-			sprite.scaleX = RandomUtil.RandomFloat(0.2f, 4);
-			sprite.scaleY = RandomUtil.RandomFloat(0.2f, 4);
 			sprite.color = new Color(RandomUtil.RandomFloat(), RandomUtil.RandomFloat(), RandomUtil.RandomFloat());
 			sprite.x = RandomUtil.RandomFloat(0, stage.width);
 			sprite.y = RandomUtil.RandomFloat(0, stage.height);
