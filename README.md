@@ -21,7 +21,7 @@ The framework consists of two parts:
 
 # Runtime Features
 - Clean and robust API for manipulating of composition of visual objects
-- Flash objects are rendered in a [**FlashStage**](http://nravo.github.io/flunity/api-docs/class_action_lib_1_1_unity_1_1_flash_stage.html) component using one draw call. Whole flash scene is rendered as one mesh.
+- Flash objects are rendered in a [**FlashStage**](https://github.com/nravo/flunity/wiki/Scene-Setup-In-Unity) component using one draw call. Whole flash scene is rendered as one mesh.
 - Touch events for single object
 - Tween library for programmatic animation
 
@@ -30,9 +30,9 @@ The framework consists of two parts:
 The fastest way is to checkout **master** branch of this repository.  
 It contains **SampleProject** which is ready to run in unity.
 
-To generate resources from flash you should compile [ResourceTool](https://github.com/nravo/flunity/wiki/ResourceTool)
-
 # Next steps
 
-- [Setup new project from scratch](https://github.com/nravo/flunity/wiki/Getting-Started/)
+- [Quick Programming Guide](https://github.com/nravo/flunity/wiki/Quick-Programming-Guide)
+- [Workink with resources](https://github.com/nravo/flunity/wiki/Working-with-Resources)
+- [Scene Setup In Unity](https://github.com/nravo/flunity/wiki/Scene-Setup-In-Unity)
 - [API documentation](http://nravo.github.io/flunity/api-docs/namespace_flunity.html)
