@@ -37,10 +37,10 @@ namespace Flunity.Properties
 
 		public Color Interpolate(float[] start, float[] end, float t)
 		{
-			var r = start[0] + t * (end[0] - start[0]);
-			var g = start[1] + t * (end[1] - start[1]);
-			var b = start[2] + t * (end[2] - start[2]);
-			var a = start[3] + t * (end[3] - start[3]);
+			var r = Mathf.Clamp(start[0] + t * (end[0] - start[0]), 0, 1);
+			var g = Mathf.Clamp(start[1] + t * (end[1] - start[1]), 0, 1);
+			var b = Mathf.Clamp(start[2] + t * (end[2] - start[2]), 0, 1);
+			var a = Mathf.Clamp(start[3] + t * (end[3] - start[3]), 0, 1);
 
 			return new Color(r, g, b, a);
 		}

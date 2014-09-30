@@ -1,9 +1,9 @@
 <resources>
-  <timeline path="SceneBundle/McDemo1">
-    <resources>flash/text/TextField,SceneBundle/blue_circle</resources>
+  <timeline path="SceneBundle/McDemo_TouchAndTween">
+    <resources>flash/text/TextField,SceneBundle/circle_sprite</resources>
     <instances>0,|1,|1,|1,|1,|1,</instances>
     <frames>
-      <f>0,40,40,0,1,1,1,1,1,1,0,0,0,0|1,291.1,333.35,0,1,1,1,1,1,1,0,0,0,0|2,444.3,197.2,0,1,1,1,1,1,1,0,0,0,0|3,613.2,286.95,0,1,1,1,1,1,1,0,0,0,0|4,467.55,393.35,0,1,1,1,1,1,1,0,0,0,0|5,436.1,310.25,0,1,1,1,1,1,1,0,0,0,0</f>
+      <f>0,40,40,0,1,1,1,1,1,1,0,0,0,0|1,256.7,542.85,0,1,1,1,1,1,1,0,0,0,0|2,391.55,542.85,0,1,1,1,1,1,1,0,0,0,0|3,526.4,542.85,0,1,1,1,1,1,1,0,0,0,0|4,661.25,542.85,0,1,1,1,1,1,1,0,0,0,0|5,796.25,542.85,0,1,1,1,1,1,1,0,0,0,0</f>
     </frames>
   </timeline>
 </resources>

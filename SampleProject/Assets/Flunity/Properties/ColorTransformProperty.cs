@@ -1,5 +1,6 @@
 ﻿using System;
 using Flunity.Common;
+using UnityEngine;
 
 namespace Flunity.Properties
 {
@@ -48,15 +49,15 @@ namespace Flunity.Properties
 		{
 			ColorTransform ct;
 
-			ct.rMult = start[0] + t * (end[0] - start[0]);
-			ct.gMult = start[1] + t * (end[1] - start[1]);
-			ct.bMult = start[2] + t * (end[2] - start[2]);
-			ct.aMult = start[3] + t * (end[3] - start[3]);
+			ct.rMult = Mathf.Clamp(start[0] + t * (end[0] - start[0]), 0, 1);
+			ct.gMult = Mathf.Clamp(start[1] + t * (end[1] - start[1]), 0, 1);
+			ct.bMult = Mathf.Clamp(start[2] + t * (end[2] - start[2]), 0, 1);
+			ct.aMult = Mathf.Clamp(start[3] + t * (end[3] - start[3]), 0, 1);
 
-			ct.rOffset = start[4] + t * (end[4] - start[4]);
-			ct.gOffset = start[5] + t * (end[5] - start[5]);
-			ct.bOffset = start[6] + t * (end[6] - start[6]);
-			ct.aOffset = start[7] + t * (end[7] - start[7]);
+			ct.rOffset = Mathf.Clamp(start[4] + t * (end[4] - start[4]), 0, 1);
+			ct.gOffset = Mathf.Clamp(start[5] + t * (end[5] - start[5]), 0, 1);
+			ct.bOffset = Mathf.Clamp(start[6] + t * (end[6] - start[6]), 0, 1);
+			ct.aOffset = Mathf.Clamp(start[7] + t * (end[7] - start[7]), 0, 1);
 
 			return ct;
 		}
